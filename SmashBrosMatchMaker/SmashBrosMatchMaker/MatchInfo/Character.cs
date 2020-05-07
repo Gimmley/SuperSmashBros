@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace SmashBrosMatchMaker.MatchInfo
 {
-    class Character
+    public class Character
     {
-        int playerNumber;
-        string name;
-        string origin;
+        int playerNumber { set; get; }
+        string name { set; get; }
+        string origin { set; get; }
+        public Character(int playerNumber, string name)
+        {
+            this.playerNumber = playerNumber;
+            this.name = name;
+        }
     }
 }
