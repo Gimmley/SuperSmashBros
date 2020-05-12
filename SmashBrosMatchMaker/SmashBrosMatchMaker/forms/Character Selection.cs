@@ -131,36 +131,32 @@ namespace SmashBrosMatchMaker
             List<Character> characterList = new List<Character>();
             if(numPlayers == 2)
             {
-                characterList.Add(new Character(1, cmbPlayer1.SelectedItem.ToString()));
-                characterList.Add(new Character(2, cmbPlayer2.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer1.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer2.SelectedItem.ToString()));
             }
             else if(numPlayers == 3)
             {
-                characterList.Add(new Character(3, cmbPlayer3.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer3.SelectedItem.ToString()));
             }
             else if (numPlayers == 4)
             {
-                characterList.Add(new Character(4, cmbPlayer4.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer4.SelectedItem.ToString()));
             }
             else if (numPlayers == 5)
             {
-                characterList.Add(new Character(5, cmbPlayer5.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer5.SelectedItem.ToString()));
             }
             else if (numPlayers == 6)
             {
-                characterList.Add(new Character(6, cmbPlayer6.SelectedItem.ToString()));
-            }
-            else if (numPlayers == 6)
-            {
-                characterList.Add(new Character(6, cmbPlayer6.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer6.SelectedItem.ToString()));
             }
             else if (numPlayers == 7)
             {
-                characterList.Add(new Character(7, cmbPlayer7.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer7.SelectedItem.ToString()));
             }
             else if (numPlayers == 8)
             {
-                characterList.Add(new Character(8, cmbPlayer8.SelectedItem.ToString()));
+                characterList.Add(new Character( cmbPlayer8.SelectedItem.ToString()));
             }
             controller.SetCharList(characterList);
         }

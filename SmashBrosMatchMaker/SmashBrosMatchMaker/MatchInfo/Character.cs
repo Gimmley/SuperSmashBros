@@ -11,9 +11,8 @@ namespace SmashBrosMatchMaker.MatchInfo
         int playerNumber { set; get; }
         string name { set; get; }
         string origin { set; get; }
-        public Character(int playerNumber, string name)
+        public Character( string name)
         {
-            this.playerNumber = playerNumber;
             this.name = name;
         }
     }
