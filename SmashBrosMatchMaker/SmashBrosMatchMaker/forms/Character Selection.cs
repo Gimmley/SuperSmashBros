@@ -17,7 +17,11 @@ namespace SmashBrosMatchMaker
     {
         IOControl controller;
         public int numPlayers { get; set; }
-        public CharacterSelection()
+
+        public bool isItems { get; set; }
+
+        public int itemPercent { get; set; }
+      public CharacterSelection()
         {
             InitializeComponent();
         }

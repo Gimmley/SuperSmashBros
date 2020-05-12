@@ -31,3 +31,36 @@ F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatc
 F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.exe
 F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.pdb
 F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.CharacterSelection.resources
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe.config
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.pdb
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Buffers.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Memory.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Json.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ValueTuple.dll
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.pdb
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Buffers.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Memory.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Json.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ValueTuple.xml
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csprojAssemblyReference.cache
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.CharacterSelection.resources
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.Rules.resources
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.Properties.Resources.resources
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.GenerateResource.cache
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.CoreCompileInputs.cache
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.CopyComplete
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.exe
+C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.pdb

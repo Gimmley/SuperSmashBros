@@ -42,9 +42,11 @@ namespace SmashBrosMatchMaker.forms
         {
             characterList = newChar;
         }
-        public void openSelectionScreen(int numPlayers)
+        public void openSelectionScreen(int numPlayers, bool isItems, int itemPercent)
         {
             selectionForm.numPlayers = numPlayers;
+            selectionForm.isItems = isItems;
+            selectionForm.itemPercent = itemPercent;
             selectionForm.makeVisible();
             selectionForm.Show();
         }
