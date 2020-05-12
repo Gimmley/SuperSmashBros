@@ -10,8 +10,20 @@ namespace SmashBrosMatchMaker.MatchInfo
     {
         int matchID;
         string MatchType;
-        List<Character> characterList;
-        string stageSelection;
+        List<Player> playerList;
+        List<string> stageList;
         List<Items> itemList;
+        public Match(string MatchType)
+        {
+            this.MatchType = MatchType;
+        }
+        public void addPlayer(Player newPlayer)
+        {
+            playerList.Add(newPlayer);
+        }
+        public void addStage(string stage)
+        {
+            stageList.Add(stage);
+        }
     }
 }

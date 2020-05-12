@@ -94,6 +94,8 @@
     <Compile Include="forms\Rules.Designer.cs">
       <DependentUpon>Rules.cs</DependentUpon>
     </Compile>
+    <Compile Include="MatchInfo\Player.cs" />
+    <Compile Include="MatchInfo\records.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\Character Selection.resx">

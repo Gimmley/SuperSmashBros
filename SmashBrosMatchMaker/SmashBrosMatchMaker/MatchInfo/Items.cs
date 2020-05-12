@@ -9,6 +9,10 @@ namespace SmashBrosMatchMaker.MatchInfo
     class Items
     {
         string itemName;
-        float itemPercent;
+        float itemPercent { set; get; }
+        public Items(string itemName)
+        {
+            this.itemName = itemName;
+        }
     }
 }

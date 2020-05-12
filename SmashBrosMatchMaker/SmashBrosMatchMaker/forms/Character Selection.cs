@@ -15,7 +15,7 @@ namespace SmashBrosMatchMaker
 {
     public partial class CharacterSelection : Form
     {
-        IOControl controller;
+        static IOControl controller = IOControl.Instance;
         public int numPlayers { get; set; }
 
         public bool isItems { get; set; }

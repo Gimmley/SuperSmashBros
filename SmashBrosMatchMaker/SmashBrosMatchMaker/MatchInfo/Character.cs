@@ -8,12 +8,12 @@ namespace SmashBrosMatchMaker.MatchInfo
 {
     public class Character
     {
-        int playerNumber { set; get; }
         string name { set; get; }
         string origin { set; get; }
         public Character( string name)
         {
             this.name = name;
         }
+
     }
 }
