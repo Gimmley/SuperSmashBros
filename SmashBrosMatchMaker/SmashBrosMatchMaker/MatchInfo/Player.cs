@@ -12,9 +12,11 @@ namespace SmashBrosMatchMaker.MatchInfo
         public int winCount { set; get; }
         public int winStreak { set; get; }
         int playerID { set; get; }
-        public Player(int playerID)
+        string playerName { set; get; }
+        public Player(int playerID, string name)
         {
             this.playerID = playerID;
+            playerName = name;
             winCount = 0;
             winStreak = 0;
         }

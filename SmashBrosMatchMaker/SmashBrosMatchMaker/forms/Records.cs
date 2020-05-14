@@ -22,6 +22,7 @@ namespace SmashBrosMatchMaker.forms
       public void fillFields()
       {
          txbPlayer.Text = winner;
+         
       }
 
       private void btnNewMatch_Click(object sender, EventArgs e)
