@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace SmashBrosMatchMaker.MatchInfo
 {
-    class Player
+    public class Player
     {
         List<Character> characterList = new List<Character>();
+        public Character currentCharacter { set; get; }
         public int winCount { set; get; }
         public int winStreak { set; get; }
-        int playerID { set; get; }
-        string playerName { set; get; }
+        public int playerID { set; get; }
+        public string playerName { set; get; }
         public Player(int playerID, string name)
         {
             this.playerID = playerID;
@@ -20,7 +21,7 @@ namespace SmashBrosMatchMaker.MatchInfo
             winCount = 0;
             winStreak = 0;
         }
-
+        
         public void addCharacter(Character newCharacter)
         {
             characterList.Add(newCharacter);

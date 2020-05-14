@@ -14,6 +14,7 @@ namespace SmashBrosMatchMaker
     public partial class Rules : Form
     {
         static IOControl controller = IOControl.Instance;
+        private bool firstGame = true;
         public Rules()
         {
             
@@ -23,20 +24,38 @@ namespace SmashBrosMatchMaker
 
         private void bttConfirm_Click(object sender, EventArgs e)
         {
-            int numPlayers = Convert.ToInt32(txtAIPlayers.Text) + Convert.ToInt32(txtHumanPlayers.Text);
+            controller.firstGame = firstGame;
+            int numPlayers;
+            if (firstGame)
+                numPlayers = Convert.ToInt32(txtAIPlayers.Text) + Convert.ToInt32(txtHumanPlayers.Text);
+            else
+                numPlayers = controller.numPlayers;
             int itemPercent = 0;
             bool isItems;
             if (rdbYes.Checked)
             {
                isItems = true;
                itemPercent = Convert.ToInt32(txbItems.Text);
-         }
+            }
             else
                isItems = false;
-            this.Hide();
-            controller.openSelectionScreen(numPlayers, isItems, itemPercent);
+            if (numPlayers <= 8 && numPlayers >= 2)
+            {
+                this.Hide();
+                controller.openSelectionScreen(numPlayers, isItems, itemPercent);
+            }
+            else
+                lblError.Text = "Please select a valid number of players";
             
         }
+      public void newGame()
+      {
+            firstGame = false;
+            txtAIPlayers.Visible = false;
+            txtHumanPlayers.Visible = false;
+            lblHumans.Visible = false;
+            label2.Visible = false;
+      }
 
       private void label4_Click(object sender, EventArgs e)
       {

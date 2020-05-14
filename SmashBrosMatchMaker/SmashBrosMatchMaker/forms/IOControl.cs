@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using System.Windows.Forms;
+using System.Data;
 
 namespace SmashBrosMatchMaker.forms
 {
@@ -39,16 +40,31 @@ namespace SmashBrosMatchMaker.forms
             recordsForm = new Records();
 
         }
-
-        List<Character> characterList = new List<Character>();
-
-        public void SetCharList(List<Character> newChar)
+        public List<Player> GetPlayers()
         {
-            characterList = newChar;
+            return playerList;
+        }
+
+        List<Player> playerList = new List<Player>();
+        public int numPlayers;
+        public bool firstGame;
+
+        public void SetPlayerList(List<Player> newPlayers)
+        {
+            foreach(Player newPlayer in newPlayers)
+            {
+
+                playerList.Add(newPlayer);
+
+            }
+            
         }
         public void openSelectionScreen(int numPlayers, bool isItems, int itemPercent)
         {
-            selectionForm.numPlayers = numPlayers;
+            this.numPlayers = numPlayers;
+            if(firstGame)
+                selectionForm.numPlayers = numPlayers;
+            selectionForm.firstGame = firstGame;
             selectionForm.isItems = isItems;
             selectionForm.itemPercent = itemPercent;
             selectionForm.makeVisible();
@@ -56,12 +72,16 @@ namespace SmashBrosMatchMaker.forms
         }
         public void openChooseWinner(int numPlayers)
         {
-            chooseWinnerForm.numPlayers = numPlayers;
-            chooseWinnerForm.fillCombobox();
+            if(firstGame)
+            {
+                chooseWinnerForm.fillCombobox();
+                chooseWinnerForm.numPlayers = numPlayers;
+            }
+            chooseWinnerForm.setPlayers(playerList);
             chooseWinnerForm.Show();
         }
 
-        public void openRecords(String winner)
+        public void openRecords(Player winner)
         {
             recordsForm.winner = winner;
             recordsForm.fillFields();
@@ -70,6 +90,7 @@ namespace SmashBrosMatchMaker.forms
 
         public void openRules()
         {
+           rulesForm.newGame();
            rulesForm.Show();
         }
    }

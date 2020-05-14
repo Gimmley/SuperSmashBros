@@ -8,7 +8,7 @@ namespace SmashBrosMatchMaker.MatchInfo
 {
     public class Character
     {
-        string name { set; get; }
+        public string name { set; get; }
         string origin { set; get; }
         public Character( string name)
         {

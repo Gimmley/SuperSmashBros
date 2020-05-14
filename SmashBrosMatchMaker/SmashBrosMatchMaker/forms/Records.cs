@@ -7,22 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SmashBrosMatchMaker.MatchInfo;
 
 namespace SmashBrosMatchMaker.forms
 {
    public partial class Records : Form
    {
       static IOControl controller = IOControl.Instance;
-      public String winner { get; set; }
+      public Player winner { get; set; }
       public Records()
       {
          InitializeComponent();
       }
+        
 
       public void fillFields()
       {
-         txbPlayer.Text = winner;
-         
+         txbPlayer.Text = winner.playerName;
+         txbCharacter.Text = winner.currentCharacter.name;
+            if (Convert.ToInt32(lblMostWinsSet.Text) < winner.winCount)
+            {
+                lblMostWinsSet.Text = winner.winCount.ToString();
+                lblMostWinName.Text = winner.playerName;
+            }
+            lblHotStreakSet.Text = winner.winStreak.ToString();
+            lblHotStreakName.Text = winner.playerName;
+                
       }
 
       private void btnNewMatch_Click(object sender, EventArgs e)
@@ -30,5 +40,6 @@ namespace SmashBrosMatchMaker.forms
          this.Hide();
          controller.openRules();
       }
-   }
+
+    }
 }

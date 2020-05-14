@@ -45,6 +45,22 @@
             this.cmbPlayer3 = new System.Windows.Forms.ComboBox();
             this.cmbPlayer4 = new System.Windows.Forms.ComboBox();
             this.cmbPlayer8 = new System.Windows.Forms.ComboBox();
+            this.txtP1Name = new System.Windows.Forms.TextBox();
+            this.lblname1 = new System.Windows.Forms.Label();
+            this.lblname2 = new System.Windows.Forms.Label();
+            this.txtP2Name = new System.Windows.Forms.TextBox();
+            this.lblname4 = new System.Windows.Forms.Label();
+            this.txtP4Name = new System.Windows.Forms.TextBox();
+            this.lblname3 = new System.Windows.Forms.Label();
+            this.txtP3Name = new System.Windows.Forms.TextBox();
+            this.lblname5 = new System.Windows.Forms.Label();
+            this.txtP5Name = new System.Windows.Forms.TextBox();
+            this.lblname6 = new System.Windows.Forms.Label();
+            this.txtP6Name = new System.Windows.Forms.TextBox();
+            this.lblname7 = new System.Windows.Forms.Label();
+            this.txtP7Name = new System.Windows.Forms.TextBox();
+            this.lblname8 = new System.Windows.Forms.Label();
+            this.txtP8Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnConfirm
@@ -277,11 +293,167 @@
             this.cmbPlayer8.TabIndex = 16;
             this.cmbPlayer8.Visible = false;
             // 
+            // txtP1Name
+            // 
+            this.txtP1Name.Location = new System.Drawing.Point(212, 88);
+            this.txtP1Name.Name = "txtP1Name";
+            this.txtP1Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP1Name.TabIndex = 17;
+            // 
+            // lblname1
+            // 
+            this.lblname1.AutoSize = true;
+            this.lblname1.Location = new System.Drawing.Point(123, 91);
+            this.lblname1.Name = "lblname1";
+            this.lblname1.Size = new System.Drawing.Size(72, 13);
+            this.lblname1.TabIndex = 18;
+            this.lblname1.Text = "Choose name";
+            // 
+            // lblname2
+            // 
+            this.lblname2.AutoSize = true;
+            this.lblname2.Location = new System.Drawing.Point(123, 182);
+            this.lblname2.Name = "lblname2";
+            this.lblname2.Size = new System.Drawing.Size(72, 13);
+            this.lblname2.TabIndex = 20;
+            this.lblname2.Text = "Choose name";
+            // 
+            // txtP2Name
+            // 
+            this.txtP2Name.Location = new System.Drawing.Point(212, 179);
+            this.txtP2Name.Name = "txtP2Name";
+            this.txtP2Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP2Name.TabIndex = 19;
+            // 
+            // lblname4
+            // 
+            this.lblname4.AutoSize = true;
+            this.lblname4.Location = new System.Drawing.Point(123, 352);
+            this.lblname4.Name = "lblname4";
+            this.lblname4.Size = new System.Drawing.Size(72, 13);
+            this.lblname4.TabIndex = 22;
+            this.lblname4.Text = "Choose name";
+            this.lblname4.Visible = false;
+            // 
+            // txtP4Name
+            // 
+            this.txtP4Name.Location = new System.Drawing.Point(212, 349);
+            this.txtP4Name.Name = "txtP4Name";
+            this.txtP4Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP4Name.TabIndex = 21;
+            this.txtP4Name.Visible = false;
+            // 
+            // lblname3
+            // 
+            this.lblname3.AutoSize = true;
+            this.lblname3.Location = new System.Drawing.Point(123, 260);
+            this.lblname3.Name = "lblname3";
+            this.lblname3.Size = new System.Drawing.Size(72, 13);
+            this.lblname3.TabIndex = 24;
+            this.lblname3.Text = "Choose name";
+            this.lblname3.Visible = false;
+            // 
+            // txtP3Name
+            // 
+            this.txtP3Name.Location = new System.Drawing.Point(212, 257);
+            this.txtP3Name.Name = "txtP3Name";
+            this.txtP3Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP3Name.TabIndex = 23;
+            this.txtP3Name.Visible = false;
+            // 
+            // lblname5
+            // 
+            this.lblname5.AutoSize = true;
+            this.lblname5.Location = new System.Drawing.Point(417, 88);
+            this.lblname5.Name = "lblname5";
+            this.lblname5.Size = new System.Drawing.Size(72, 13);
+            this.lblname5.TabIndex = 26;
+            this.lblname5.Text = "Choose name";
+            this.lblname5.Visible = false;
+            // 
+            // txtP5Name
+            // 
+            this.txtP5Name.Location = new System.Drawing.Point(528, 85);
+            this.txtP5Name.Name = "txtP5Name";
+            this.txtP5Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP5Name.TabIndex = 25;
+            this.txtP5Name.Visible = false;
+            // 
+            // lblname6
+            // 
+            this.lblname6.AutoSize = true;
+            this.lblname6.Location = new System.Drawing.Point(417, 178);
+            this.lblname6.Name = "lblname6";
+            this.lblname6.Size = new System.Drawing.Size(72, 13);
+            this.lblname6.TabIndex = 28;
+            this.lblname6.Text = "Choose name";
+            this.lblname6.Visible = false;
+            // 
+            // txtP6Name
+            // 
+            this.txtP6Name.Location = new System.Drawing.Point(528, 175);
+            this.txtP6Name.Name = "txtP6Name";
+            this.txtP6Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP6Name.TabIndex = 27;
+            this.txtP6Name.Visible = false;
+            // 
+            // lblname7
+            // 
+            this.lblname7.AutoSize = true;
+            this.lblname7.Location = new System.Drawing.Point(417, 263);
+            this.lblname7.Name = "lblname7";
+            this.lblname7.Size = new System.Drawing.Size(72, 13);
+            this.lblname7.TabIndex = 30;
+            this.lblname7.Text = "Choose name";
+            this.lblname7.Visible = false;
+            // 
+            // txtP7Name
+            // 
+            this.txtP7Name.Location = new System.Drawing.Point(528, 260);
+            this.txtP7Name.Name = "txtP7Name";
+            this.txtP7Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP7Name.TabIndex = 29;
+            this.txtP7Name.Visible = false;
+            // 
+            // lblname8
+            // 
+            this.lblname8.AutoSize = true;
+            this.lblname8.Location = new System.Drawing.Point(417, 360);
+            this.lblname8.Name = "lblname8";
+            this.lblname8.Size = new System.Drawing.Size(72, 13);
+            this.lblname8.TabIndex = 32;
+            this.lblname8.Text = "Choose name";
+            this.lblname8.Visible = false;
+            // 
+            // txtP8Name
+            // 
+            this.txtP8Name.Location = new System.Drawing.Point(528, 357);
+            this.txtP8Name.Name = "txtP8Name";
+            this.txtP8Name.Size = new System.Drawing.Size(100, 20);
+            this.txtP8Name.TabIndex = 31;
+            this.txtP8Name.Visible = false;
+            // 
             // CharacterSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblname8);
+            this.Controls.Add(this.txtP8Name);
+            this.Controls.Add(this.lblname7);
+            this.Controls.Add(this.txtP7Name);
+            this.Controls.Add(this.lblname6);
+            this.Controls.Add(this.txtP6Name);
+            this.Controls.Add(this.lblname5);
+            this.Controls.Add(this.txtP5Name);
+            this.Controls.Add(this.lblname3);
+            this.Controls.Add(this.txtP3Name);
+            this.Controls.Add(this.lblname4);
+            this.Controls.Add(this.txtP4Name);
+            this.Controls.Add(this.lblname2);
+            this.Controls.Add(this.txtP2Name);
+            this.Controls.Add(this.lblname1);
+            this.Controls.Add(this.txtP1Name);
             this.Controls.Add(this.cmbPlayer8);
             this.Controls.Add(this.cmbPlayer4);
             this.Controls.Add(this.cmbPlayer3);
@@ -325,5 +497,21 @@
         private System.Windows.Forms.ComboBox cmbPlayer3;
         private System.Windows.Forms.ComboBox cmbPlayer4;
         private System.Windows.Forms.ComboBox cmbPlayer8;
+        private System.Windows.Forms.TextBox txtP1Name;
+        private System.Windows.Forms.Label lblname1;
+        private System.Windows.Forms.Label lblname2;
+        private System.Windows.Forms.TextBox txtP2Name;
+        private System.Windows.Forms.Label lblname4;
+        private System.Windows.Forms.TextBox txtP4Name;
+        private System.Windows.Forms.Label lblname3;
+        private System.Windows.Forms.TextBox txtP3Name;
+        private System.Windows.Forms.Label lblname5;
+        private System.Windows.Forms.TextBox txtP5Name;
+        private System.Windows.Forms.Label lblname6;
+        private System.Windows.Forms.TextBox txtP6Name;
+        private System.Windows.Forms.Label lblname7;
+        private System.Windows.Forms.TextBox txtP7Name;
+        private System.Windows.Forms.Label lblname8;
+        private System.Windows.Forms.TextBox txtP8Name;
     }
 }
