@@ -29,10 +29,14 @@ namespace SmashBrosMatchMaker.forms
         }                                                        //this and above makes class singleton
         Rules rulesForm;
         CharacterSelection selectionForm;
+        Choose_Winner chooseWinnerForm;
+        Records recordsForm;
         public IOControl()
         {
             rulesForm = new Rules();
-            selectionForm = new CharacterSelection();   
+            selectionForm = new CharacterSelection();
+            chooseWinnerForm = new Choose_Winner();
+            recordsForm = new Records();
 
         }
 
@@ -50,5 +54,23 @@ namespace SmashBrosMatchMaker.forms
             selectionForm.makeVisible();
             selectionForm.Show();
         }
-    }
+        public void openChooseWinner(int numPlayers)
+        {
+            chooseWinnerForm.numPlayers = numPlayers;
+            chooseWinnerForm.fillCombobox();
+            chooseWinnerForm.Show();
+        }
+
+        public void openRecords(String winner)
+        {
+            recordsForm.winner = winner;
+            recordsForm.fillFields();
+            recordsForm.Show();
+        }
+
+        public void openRules()
+        {
+           rulesForm.Show();
+        }
+   }
 }

@@ -159,6 +159,8 @@ namespace SmashBrosMatchMaker
                 characterList.Add(new Character( cmbPlayer8.SelectedItem.ToString()));
             }
             controller.SetCharList(characterList);
+            this.Hide();
+            controller.openChooseWinner(numPlayers);
         }
     }
 }
