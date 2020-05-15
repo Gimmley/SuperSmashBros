@@ -16,19 +16,19 @@ namespace SmashBrosMatchMaker
         [STAThread]
         static void Main()
         {
-            Player p = new Player
-            {
-                PlayerName = "testtest",
-                PlayerTypeId = 2,
-                RecordId = 4
-            };
+            //Player p = new Player
+            //{
+            //    PlayerName = "testtesttest",
+            //    PlayerTypeId = 2,
+            //    RecordId = 4
+            //};
 
-            Console.WriteLine(DatabaseContext.Instance.Player.Count());
+            //Console.WriteLine(DatabaseContext.Instance.Player.Where(player => player.PlayerName == "test").FirstOrDefault());
 
-            DatabaseContext.Instance.Add(p);
-            DatabaseContext.Instance.SaveChanges();
+            //DatabaseContext.Instance.Add(p);
+            ////DatabaseContext.Instance.
 
-            Console.WriteLine(DatabaseContext.Instance.Player.Count());
+            //Console.WriteLine(DatabaseContext.Instance.Player.Count());
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

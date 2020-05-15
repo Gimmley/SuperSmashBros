@@ -7,16 +7,15 @@ namespace SmashBrosMatchMaker.Database.Entities
     {
         public Records()
         {
-            Player = new HashSet<Player>();
             PlayersWithCharacter = new HashSet<PlayersWithCharacter>();
         }
 
         public int Id { get; set; }
+        public int? PlayerId { get; set; }
         public string RecordName { get; set; }
-        public string CurrentRecord { get; set; }
-        public bool IsBroken { get; set; }
+        public int CurrentRecord { get; set; }
 
-        public virtual ICollection<Player> Player { get; set; }
+        public virtual Player Player { get; set; }
         public virtual ICollection<PlayersWithCharacter> PlayersWithCharacter { get; set; }
     }
 }
