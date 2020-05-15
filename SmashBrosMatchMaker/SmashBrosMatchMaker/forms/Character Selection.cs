@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
-using SmashBrosMatchMaker.MatchInfo;
+using SmashBrosMatchMaker.Database.Entities;
 using SmashBrosMatchMaker.forms;
+using SmashBrosMatchMaker.MatchInfo;
 
 namespace SmashBrosMatchMaker
 {
@@ -23,10 +24,13 @@ namespace SmashBrosMatchMaker
 
         public int itemPercent { get; set; }
 
+        Match match = new Match();
+
         List<ComboBox> characterBoxes = new List<ComboBox>();
         List<TextBox> NameBoxes = new List<TextBox>();
         List<Label> nameLabel = new List<Label>();
         List<Label> numberLabel = new List<Label>();
+        List<RadioButton> buttonList = new List<RadioButton>();
         public CharacterSelection()
         {
             InitializeComponent();
@@ -34,32 +38,25 @@ namespace SmashBrosMatchMaker
         }
         public void populateLists()
         {
-            characterBoxes.Add(cmbPlayer1);
-            characterBoxes.Add(cmbPlayer2);
-            characterBoxes.Add(cmbPlayer3);
-            characterBoxes.Add(cmbPlayer4);
-            characterBoxes.Add(cmbPlayer5);
-            characterBoxes.Add(cmbPlayer6);
-            characterBoxes.Add(cmbPlayer7);
-            characterBoxes.Add(cmbPlayer8);
+            characterBoxes.Add(cmbChar1);
+            characterBoxes.Add(cmbChar2);
+            characterBoxes.Add(cmbChar3);
+            characterBoxes.Add(cmbChar4);
+            characterBoxes.Add(cmbChar5);
+            characterBoxes.Add(cmbChar6);
+            characterBoxes.Add(cmbChar7);
+            characterBoxes.Add(cmbChar8);
 
-            NameBoxes.Add(txtP1Name);
-            NameBoxes.Add(txtP2Name);
-            NameBoxes.Add(txtP3Name);
-            NameBoxes.Add(txtP4Name);
-            NameBoxes.Add(txtP5Name);
-            NameBoxes.Add(txtP6Name);
-            NameBoxes.Add(txtP7Name);
-            NameBoxes.Add(txtP8Name);
+            characterBoxes.Add(cmbPlayerList1);
 
-            nameLabel.Add(lblname1);
-            nameLabel.Add(lblname2);
-            nameLabel.Add(lblname3);
-            nameLabel.Add(lblname4);
-            nameLabel.Add(lblname5);
-            nameLabel.Add(lblname6);
-            nameLabel.Add(lblname7);
-            nameLabel.Add(lblname8);
+            nameLabel.Add(lblChoosePlayer1);
+            nameLabel.Add(lblChoosePlayer2);
+            nameLabel.Add(lblChoosePlayer3);
+            nameLabel.Add(lblChoosePlayer4);
+            nameLabel.Add(lblChoosePlayer5);
+            nameLabel.Add(lblChoosePlayer6);
+            nameLabel.Add(lblChoosePlayer7);
+            nameLabel.Add(lblChoosePlayer8);
 
             nameLabel.Add(lblChar1);
             nameLabel.Add(lblChar2);
@@ -78,6 +75,15 @@ namespace SmashBrosMatchMaker
             numberLabel.Add(lblPlayer6);
             numberLabel.Add(lblPlayer7);
             numberLabel.Add(lblPlayer8);
+
+            buttonList.Add(rdbAI1);
+            buttonList.Add(rdbAI2);
+            buttonList.Add(rdbAI3);
+            buttonList.Add(rdbAI4);
+            buttonList.Add(rdbAI5);
+            buttonList.Add(rdbAI6);
+            buttonList.Add(rdbAI7);
+            buttonList.Add(rdbAI8);
         }
         public void newGame()
         {
@@ -122,20 +128,13 @@ namespace SmashBrosMatchMaker
                 
             }
             i = 0;
-            int aiCount = 1;
+            
             foreach (Label label in numberLabel)
             {
                 if (label.Name.Contains((i + 1).ToString()) && i < numPlayers)
                 {
                     label.Visible = true;
                 }
-                if (i < humanPlayers)
-                    label.Text = "Human " + (i+1).ToString();
-                else
-                {
-                    label.Text = "AI " + (aiCount).ToString();
-                    aiCount++;
-                }   
                 i++;
             }
 
@@ -174,7 +173,7 @@ namespace SmashBrosMatchMaker
                 return;
             }
             Stage stage;
-            List<Player> playerList = new List<Player>();
+            
             int i = 1;
             if(firstGame)
             {
@@ -187,21 +186,35 @@ namespace SmashBrosMatchMaker
                         {
                             if(label.Name.Contains(i.ToString()))
                             {
-                                if(label.Text.Contains("AI"))
-                                    playerList.Add(new Player(i, box.Text, "AI"));
+                                if (label.Text.Contains("AI"))
+                                {
+                                    Database.Entities.Player p = new Database.Entities.Player
+                                    {
+                                        PlayerName = box.Text,
+                                        PlayerTypeId = 2,
+                                    };
+                                    match.playerList.Add(p);
+                                }
+                                    
                                 if (label.Text.Contains("Human"))
-                                    playerList.Add(new Player(i, box.Text, "Human"));
+                                {
+                                    Database.Entities.Player p = new Database.Entities.Player
+                                    {
+                                        PlayerName = box.Text,
+                                        PlayerTypeId = 1,
+                                    };
+                                    match.playerList.Add(p);
+                                }
+                                    
                             }
                         }
                         
                         foreach (ComboBox cmbBox in characterBoxes)
                         {
-                            if (cmbBox.Name.Contains(i.ToString()))
-                            {
+                          if
+                          Database.DatabaseContext.Instance.CharacterTable.Where(foundChar => foundChar.CharacterName == cmbStageType.SelectedItem.ToString()).First();
+                                
 
-                                playerList[i - 1].addCharacter(new Character(cmbBox.SelectedItem.ToString()));
-                                playerList[i - 1].currentCharacter = new Character(cmbBox.SelectedItem.ToString());
-                            }
                         }
                         i++;
                     }
@@ -218,17 +231,19 @@ namespace SmashBrosMatchMaker
                     
                     foreach (ComboBox cmbBox in characterBoxes)
                     {
-                        if (cmbBox.Name.Contains(player.playerID.ToString()))
+                        if (cmbBox.Name.Contains(i.ToString()))
                         {
 
-                            playerList[player.playerID - 1].addCharacter(new Character(cmbBox.SelectedItem.ToString()));
-                            playerList[player.playerID - 1].currentCharacter = new Character(cmbBox.SelectedItem.ToString());
+                            //playerList[player.playerID - 1].addCharacter(new Character(cmbBox.SelectedItem.ToString()));
+                            //playerList[player.playerID - 1].currentCharacter = new Character(cmbBox.SelectedItem.ToString());
                         }
+                        i++;
                     }
                     
                 }
-                stage = new Stage(cmbStage.SelectedItem.ToString(), cmbStageType.SelectedItem.ToString());
-                
+                //stage = new Stage(cmbStage.SelectedItem.ToString(), cmbStageType.SelectedItem.ToString());
+                Stage stage = Database.DatabaseContext.Instance.Stage.Where(foundStage => foundStage.StageName == cmbStage.SelectedItem.ToString()).First();
+                StageType stageType = Database.DatabaseContext.Instance.StageType.Where(foundtype => foundtype.StageTypeName == cmbStageType.SelectedItem.ToString()).First();
             }
                 
 
@@ -237,6 +252,9 @@ namespace SmashBrosMatchMaker
             controller.openChooseWinner(numPlayers,stage);
         }
 
+        private void bttCreate_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
