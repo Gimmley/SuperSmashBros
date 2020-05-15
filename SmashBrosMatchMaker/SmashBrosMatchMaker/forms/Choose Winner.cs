@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SmashBrosMatchMaker.MatchInfo;
+using SmashBrosMatchMaker.Database.Entities;
 using SmashBrosMatchMaker.forms;
+using SmashBrosMatchMaker.MatchInfo;
 
 namespace SmashBrosMatchMaker.forms
 {
@@ -17,7 +18,7 @@ namespace SmashBrosMatchMaker.forms
       static IOControl controller = IOControl.Instance;
       public int numPlayers { get; set; }
       public List<Player> playerList = new List<Player>();
-      public Stage stage;
+      public Match match;
         
 
       private Player winner;
@@ -36,7 +37,7 @@ namespace SmashBrosMatchMaker.forms
          
          foreach(Player player in playerList)
          {
-                cmbWinner.Items.Add(player.playerName);
+                cmbWinner.Items.Add(player.PlayerName);
          }
       }
       public bool isEmpty()
@@ -57,19 +58,18 @@ namespace SmashBrosMatchMaker.forms
          
          foreach (Player player in playerList)
          {
-            if (winnerName == player.playerName)
+            if (winnerName == player.PlayerName)
             {
                 winner = player;
-                player.incrementTotalWins();
-                player.winStreak++;
+                //increment wins via database
             }
-            else
-                player.winStreak =  0;
+            
+                 //else set winstreak to 0
          }
             cmbWinner.Items.Clear();
          this.Hide();
          
-         controller.openRecords(winner,stage);
+         controller.openRecords(winner,match);
       }
    }
 }

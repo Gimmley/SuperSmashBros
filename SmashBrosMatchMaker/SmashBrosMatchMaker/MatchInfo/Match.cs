@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SmashBrosMatchMaker.Database.Entities;
 
 namespace SmashBrosMatchMaker.MatchInfo
 {
-    class Match
+    public class Match
     {
-        int matchID;
-        string MatchType;
-        List<Player> playerList;
-        List<Stage> stageList;
-        List<Items> itemList;
-        public Match(string MatchType)
+        
+        public string MatchType;
+        public int numPlayers;
+        public List<Player> playerList;
+        public List<Stage> stageList;
+        public List<Items> itemList;
+        public Dictionary<Player, CharacterTable> characterList;
+        public Match()
         {
-            this.MatchType = MatchType;
+           
         }
         public void addPlayer(Player newPlayer)
         {
@@ -24,6 +27,10 @@ namespace SmashBrosMatchMaker.MatchInfo
         public void addStage(Stage stage)
         {
             stageList.Add(stage);
+        }
+        public void addCharacter(Player owner ,CharacterTable newChar)
+        {
+            characterList.Add(owner, newChar);
         }
     }
 }

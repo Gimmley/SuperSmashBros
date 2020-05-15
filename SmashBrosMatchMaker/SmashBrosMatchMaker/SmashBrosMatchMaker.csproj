@@ -164,12 +164,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\DatabaseController.cs" />
     <Compile Include="forms\Character Selection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\Character Selection.Designer.cs">
       <DependentUpon>Character Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\characterCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\characterCreation.Designer.cs">
+      <DependentUpon>characterCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Choose Winner.cs">
       <SubType>Form</SubType>
@@ -184,8 +189,6 @@
     <Compile Include="forms\Records.Designer.cs">
       <DependentUpon>Records.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatchInfo\Character.cs" />
-    <Compile Include="MatchInfo\Items.cs" />
     <Compile Include="MatchInfo\Match.cs" />
     <Compile Include="forms\Rules.cs">
       <SubType>Form</SubType>
@@ -193,13 +196,13 @@
     <Compile Include="forms\Rules.Designer.cs">
       <DependentUpon>Rules.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatchInfo\Player.cs" />
-    <Compile Include="MatchInfo\records.cs" />
-    <Compile Include="MatchInfo\Stage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\Character Selection.resx">
       <DependentUpon>Character Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\characterCreation.resx">
+      <DependentUpon>characterCreation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Choose Winner.resx">
       <DependentUpon>Choose Winner.cs</DependentUpon>

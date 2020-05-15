@@ -1,4 +1,5 @@
-﻿using SmashBrosMatchMaker.MatchInfo;
+﻿using SmashBrosMatchMaker.Database.Entities;
+using SmashBrosMatchMaker.MatchInfo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using System.Collections;
 using System.Windows.Forms;
 using System.Data;
+
 
 namespace SmashBrosMatchMaker.forms
 {
@@ -32,17 +34,20 @@ namespace SmashBrosMatchMaker.forms
         CharacterSelection selectionForm;
         Choose_Winner chooseWinnerForm;
         Records recordsForm;
+        CharacterCreation creationForm;
         public IOControl()
         {
             rulesForm = new Rules();
             selectionForm = new CharacterSelection();
             chooseWinnerForm = new Choose_Winner();
             recordsForm = new Records();
+            creationForm = new CharacterCreation();
 
         }
         public List<Player> GetPlayers()
         {
             return playerList;
+            
         }
 
         List<Player> playerList = new List<Player>();
@@ -57,16 +62,16 @@ namespace SmashBrosMatchMaker.forms
                 playerList.Add(newPlayer);
 
             }
+
             
         }
-        public void openSelectionScreen(int numPlayers,int humanPlayers, bool isItems, int itemPercent)
+        public void openSelectionScreen(int numPlayers, bool isItems, int itemPercent)
         {
-            this.humanPlayers = humanPlayers;
+            
             this.numPlayers = numPlayers;
             if(firstGame)
-            {
+            { 
                 selectionForm.numPlayers = numPlayers;
-                selectionForm.humanPlayers = humanPlayers;
             }
             selectionForm.firstGame = firstGame;
             selectionForm.isItems = isItems;
@@ -74,23 +79,28 @@ namespace SmashBrosMatchMaker.forms
             selectionForm.makeVisible();
             selectionForm.Show();
         }
-        public void openChooseWinner(int numPlayers,Stage stage)
+
+        public void showSelectionScreen()
+        {
+            selectionForm.Show();
+        }
+        public void openChooseWinner(Match match)
         {
             if(firstGame)
             {
-                chooseWinnerForm.setPlayers(playerList);
+                chooseWinnerForm.setPlayers(match.playerList);
                 chooseWinnerForm.fillCombobox();
-                chooseWinnerForm.numPlayers = numPlayers;
+                chooseWinnerForm.numPlayers = match.numPlayers;
             }
-            chooseWinnerForm.stage = stage;
+            chooseWinnerForm.match = match;
             chooseWinnerForm.Show();
         }
 
-        public void openRecords(Player winner,Stage stage)
+        public void openRecords(Player winner,Match match)
         {
-            recordsForm.currentStage = stage;
+            recordsForm.currentStage = match.stageList.Last();
             recordsForm.winner = winner;
-            recordsForm.fillFields();
+            recordsForm.fillFields(match);
             recordsForm.Show();
         }
 
@@ -98,6 +108,10 @@ namespace SmashBrosMatchMaker.forms
         {
            rulesForm.newGame();
            rulesForm.Show();
+        }
+        public void openCreationScreen()
+        {
+            creationForm.Show();
         }
    }
 }

@@ -31,8 +31,7 @@ namespace SmashBrosMatchMaker
             int humanPlayers;
             if (firstGame)
             {
-                numPlayers = Convert.ToInt32(txtAIPlayers.Text) + Convert.ToInt32(txtHumanPlayers.Text);
-                humanPlayers = Convert.ToInt32(txtHumanPlayers.Text);
+                numPlayers = Convert.ToInt32(txtPlayers.Text);
             }
             else
             {
@@ -52,7 +51,7 @@ namespace SmashBrosMatchMaker
             if (numPlayers <= 8 && numPlayers >= 2)
             {
                 this.Hide();
-                controller.openSelectionScreen(numPlayers, humanPlayers, isItems, itemPercent);
+                controller.openSelectionScreen(numPlayers, isItems, itemPercent);
             }
             else
                 lblError.Text = "Please select a valid number of players";
@@ -61,10 +60,9 @@ namespace SmashBrosMatchMaker
         public void newGame()
         {
             firstGame = false;
-            txtAIPlayers.Visible = false;
-            txtHumanPlayers.Visible = false;
+            txtPlayers.Visible = false;
             lblHumans.Visible = false;
-            label2.Visible = false;
+            
         }
         public bool isEmpty()
         {
@@ -79,14 +77,14 @@ namespace SmashBrosMatchMaker
                 lblError.Text = "Please select if you would like items";
                 return true;
             }
-            if (txtAIPlayers.Visible == false || txtHumanPlayers.Visible == false)
+            if ( txtPlayers.Visible == false)
                 return false;
-            if (txtAIPlayers.Text == "" || txtHumanPlayers.Text == "")
+            if ( txtPlayers.Text == "")
             {
                 lblError.Text = "Please input valid number of players";
                 return true;
             }
-            if (!int.TryParse(txtAIPlayers.Text, out i) || !int.TryParse(txtHumanPlayers.Text, out i))
+            if ( !int.TryParse(txtPlayers.Text, out i))
             {
                 lblError.Text = "Please input valid number of players";
                 return true;
