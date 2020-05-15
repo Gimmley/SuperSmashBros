@@ -47,7 +47,7 @@ namespace SmashBrosMatchMaker.forms
 
         List<Player> playerList = new List<Player>();
         public int numPlayers;
-        public bool firstGame;
+        public bool firstGame = true;
 
         public void SetPlayerList(List<Player> newPlayers)
         {
@@ -74,10 +74,10 @@ namespace SmashBrosMatchMaker.forms
         {
             if(firstGame)
             {
+                chooseWinnerForm.setPlayers(playerList);
                 chooseWinnerForm.fillCombobox();
                 chooseWinnerForm.numPlayers = numPlayers;
             }
-            chooseWinnerForm.setPlayers(playerList);
             chooseWinnerForm.Show();
         }
 

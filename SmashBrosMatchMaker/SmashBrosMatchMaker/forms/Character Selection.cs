@@ -59,6 +59,7 @@ namespace SmashBrosMatchMaker
         }
         public void makeVisible()
         {
+            
             if (numPlayers == 8)
             {
                 lblPlayer1.Visible = true;
