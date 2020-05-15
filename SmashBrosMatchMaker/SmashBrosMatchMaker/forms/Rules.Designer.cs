@@ -155,7 +155,6 @@
          this.lblItems.TabIndex = 11;
          this.lblItems.Text = "Percent of items: ";
          this.lblItems.Visible = false;
-         this.lblItems.Click += new System.EventHandler(this.label4_Click);
          // 
          // txbItems
          // 

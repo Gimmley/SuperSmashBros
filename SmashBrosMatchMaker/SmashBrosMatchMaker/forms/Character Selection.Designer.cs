@@ -66,6 +66,14 @@
             this.cmbStageType = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.lblChar8 = new System.Windows.Forms.Label();
+            this.lblChar7 = new System.Windows.Forms.Label();
+            this.lblChar6 = new System.Windows.Forms.Label();
+            this.lblChar5 = new System.Windows.Forms.Label();
+            this.lblChar3 = new System.Windows.Forms.Label();
+            this.lblChar4 = new System.Windows.Forms.Label();
+            this.lblChar2 = new System.Windows.Forms.Label();
+            this.lblChar1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConfirm
@@ -81,7 +89,7 @@
             // lblPlayer1
             // 
             this.lblPlayer1.AutoSize = true;
-            this.lblPlayer1.Location = new System.Drawing.Point(41, 56);
+            this.lblPlayer1.Location = new System.Drawing.Point(176, 30);
             this.lblPlayer1.Name = "lblPlayer1";
             this.lblPlayer1.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer1.TabIndex = 1;
@@ -90,7 +98,7 @@
             // lblPlayer2
             // 
             this.lblPlayer2.AutoSize = true;
-            this.lblPlayer2.Location = new System.Drawing.Point(41, 147);
+            this.lblPlayer2.Location = new System.Drawing.Point(176, 121);
             this.lblPlayer2.Name = "lblPlayer2";
             this.lblPlayer2.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer2.TabIndex = 2;
@@ -99,7 +107,7 @@
             // lblPlayer3
             // 
             this.lblPlayer3.AutoSize = true;
-            this.lblPlayer3.Location = new System.Drawing.Point(41, 225);
+            this.lblPlayer3.Location = new System.Drawing.Point(176, 199);
             this.lblPlayer3.Name = "lblPlayer3";
             this.lblPlayer3.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer3.TabIndex = 3;
@@ -109,7 +117,7 @@
             // lblPlayer4
             // 
             this.lblPlayer4.AutoSize = true;
-            this.lblPlayer4.Location = new System.Drawing.Point(41, 325);
+            this.lblPlayer4.Location = new System.Drawing.Point(176, 299);
             this.lblPlayer4.Name = "lblPlayer4";
             this.lblPlayer4.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer4.TabIndex = 4;
@@ -119,7 +127,7 @@
             // lblPlayer5
             // 
             this.lblPlayer5.AutoSize = true;
-            this.lblPlayer5.Location = new System.Drawing.Point(335, 56);
+            this.lblPlayer5.Location = new System.Drawing.Point(448, 30);
             this.lblPlayer5.Name = "lblPlayer5";
             this.lblPlayer5.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer5.TabIndex = 5;
@@ -129,7 +137,7 @@
             // lblPlayer7
             // 
             this.lblPlayer7.AutoSize = true;
-            this.lblPlayer7.Location = new System.Drawing.Point(335, 225);
+            this.lblPlayer7.Location = new System.Drawing.Point(448, 199);
             this.lblPlayer7.Name = "lblPlayer7";
             this.lblPlayer7.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer7.TabIndex = 6;
@@ -139,7 +147,7 @@
             // lblPlayer6
             // 
             this.lblPlayer6.AutoSize = true;
-            this.lblPlayer6.Location = new System.Drawing.Point(335, 147);
+            this.lblPlayer6.Location = new System.Drawing.Point(448, 121);
             this.lblPlayer6.Name = "lblPlayer6";
             this.lblPlayer6.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer6.TabIndex = 7;
@@ -149,7 +157,7 @@
             // lblPlayer8
             // 
             this.lblPlayer8.AutoSize = true;
-            this.lblPlayer8.Location = new System.Drawing.Point(335, 325);
+            this.lblPlayer8.Location = new System.Drawing.Point(448, 299);
             this.lblPlayer8.Name = "lblPlayer8";
             this.lblPlayer8.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer8.TabIndex = 8;
@@ -222,7 +230,7 @@
             "Pikachu",
             "Samus",
             "Yoshi"});
-            this.cmbPlayer1.Location = new System.Drawing.Point(109, 56);
+            this.cmbPlayer1.Location = new System.Drawing.Point(131, 53);
             this.cmbPlayer1.Name = "cmbPlayer1";
             this.cmbPlayer1.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayer1.TabIndex = 12;
@@ -239,7 +247,7 @@
             "Pikachu",
             "Samus",
             "Yoshi"});
-            this.cmbPlayer2.Location = new System.Drawing.Point(109, 147);
+            this.cmbPlayer2.Location = new System.Drawing.Point(131, 144);
             this.cmbPlayer2.Name = "cmbPlayer2";
             this.cmbPlayer2.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayer2.TabIndex = 13;
@@ -256,7 +264,7 @@
             "Pikachu",
             "Samus",
             "Yoshi"});
-            this.cmbPlayer3.Location = new System.Drawing.Point(109, 225);
+            this.cmbPlayer3.Location = new System.Drawing.Point(131, 228);
             this.cmbPlayer3.Name = "cmbPlayer3";
             this.cmbPlayer3.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayer3.TabIndex = 14;
@@ -274,7 +282,7 @@
             "Pikachu",
             "Samus",
             "Yoshi"});
-            this.cmbPlayer4.Location = new System.Drawing.Point(109, 317);
+            this.cmbPlayer4.Location = new System.Drawing.Point(131, 322);
             this.cmbPlayer4.Name = "cmbPlayer4";
             this.cmbPlayer4.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayer4.TabIndex = 15;
@@ -300,7 +308,7 @@
             // 
             // txtP1Name
             // 
-            this.txtP1Name.Location = new System.Drawing.Point(130, 83);
+            this.txtP1Name.Location = new System.Drawing.Point(152, 80);
             this.txtP1Name.Name = "txtP1Name";
             this.txtP1Name.Size = new System.Drawing.Size(100, 20);
             this.txtP1Name.TabIndex = 17;
@@ -308,7 +316,7 @@
             // lblname1
             // 
             this.lblname1.AutoSize = true;
-            this.lblname1.Location = new System.Drawing.Point(41, 86);
+            this.lblname1.Location = new System.Drawing.Point(33, 80);
             this.lblname1.Name = "lblname1";
             this.lblname1.Size = new System.Drawing.Size(72, 13);
             this.lblname1.TabIndex = 18;
@@ -317,7 +325,7 @@
             // lblname2
             // 
             this.lblname2.AutoSize = true;
-            this.lblname2.Location = new System.Drawing.Point(41, 177);
+            this.lblname2.Location = new System.Drawing.Point(33, 171);
             this.lblname2.Name = "lblname2";
             this.lblname2.Size = new System.Drawing.Size(72, 13);
             this.lblname2.TabIndex = 20;
@@ -325,7 +333,7 @@
             // 
             // txtP2Name
             // 
-            this.txtP2Name.Location = new System.Drawing.Point(130, 174);
+            this.txtP2Name.Location = new System.Drawing.Point(152, 171);
             this.txtP2Name.Name = "txtP2Name";
             this.txtP2Name.Size = new System.Drawing.Size(100, 20);
             this.txtP2Name.TabIndex = 19;
@@ -333,7 +341,7 @@
             // lblname4
             // 
             this.lblname4.AutoSize = true;
-            this.lblname4.Location = new System.Drawing.Point(41, 347);
+            this.lblname4.Location = new System.Drawing.Point(33, 349);
             this.lblname4.Name = "lblname4";
             this.lblname4.Size = new System.Drawing.Size(72, 13);
             this.lblname4.TabIndex = 22;
@@ -342,7 +350,7 @@
             // 
             // txtP4Name
             // 
-            this.txtP4Name.Location = new System.Drawing.Point(130, 344);
+            this.txtP4Name.Location = new System.Drawing.Point(152, 349);
             this.txtP4Name.Name = "txtP4Name";
             this.txtP4Name.Size = new System.Drawing.Size(100, 20);
             this.txtP4Name.TabIndex = 21;
@@ -351,7 +359,7 @@
             // lblname3
             // 
             this.lblname3.AutoSize = true;
-            this.lblname3.Location = new System.Drawing.Point(41, 255);
+            this.lblname3.Location = new System.Drawing.Point(33, 255);
             this.lblname3.Name = "lblname3";
             this.lblname3.Size = new System.Drawing.Size(72, 13);
             this.lblname3.TabIndex = 24;
@@ -360,7 +368,7 @@
             // 
             // txtP3Name
             // 
-            this.txtP3Name.Location = new System.Drawing.Point(130, 252);
+            this.txtP3Name.Location = new System.Drawing.Point(152, 255);
             this.txtP3Name.Name = "txtP3Name";
             this.txtP3Name.Size = new System.Drawing.Size(100, 20);
             this.txtP3Name.TabIndex = 23;
@@ -369,7 +377,7 @@
             // lblname5
             // 
             this.lblname5.AutoSize = true;
-            this.lblname5.Location = new System.Drawing.Point(335, 83);
+            this.lblname5.Location = new System.Drawing.Point(327, 80);
             this.lblname5.Name = "lblname5";
             this.lblname5.Size = new System.Drawing.Size(72, 13);
             this.lblname5.TabIndex = 26;
@@ -387,7 +395,7 @@
             // lblname6
             // 
             this.lblname6.AutoSize = true;
-            this.lblname6.Location = new System.Drawing.Point(335, 173);
+            this.lblname6.Location = new System.Drawing.Point(327, 170);
             this.lblname6.Name = "lblname6";
             this.lblname6.Size = new System.Drawing.Size(72, 13);
             this.lblname6.TabIndex = 28;
@@ -405,7 +413,7 @@
             // lblname7
             // 
             this.lblname7.AutoSize = true;
-            this.lblname7.Location = new System.Drawing.Point(335, 258);
+            this.lblname7.Location = new System.Drawing.Point(327, 255);
             this.lblname7.Name = "lblname7";
             this.lblname7.Size = new System.Drawing.Size(72, 13);
             this.lblname7.TabIndex = 30;
@@ -423,7 +431,7 @@
             // lblname8
             // 
             this.lblname8.AutoSize = true;
-            this.lblname8.Location = new System.Drawing.Point(335, 355);
+            this.lblname8.Location = new System.Drawing.Point(327, 352);
             this.lblname8.Name = "lblname8";
             this.lblname8.Size = new System.Drawing.Size(72, 13);
             this.lblname8.TabIndex = 32;
@@ -486,16 +494,102 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(670, 90);
+            this.lblError.Location = new System.Drawing.Point(573, 115);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 37;
+            // 
+            // lblChar8
+            // 
+            this.lblChar8.AutoSize = true;
+            this.lblChar8.Location = new System.Drawing.Point(327, 325);
+            this.lblChar8.Name = "lblChar8";
+            this.lblChar8.Size = new System.Drawing.Size(92, 13);
+            this.lblChar8.TabIndex = 45;
+            this.lblChar8.Text = "Choose Character";
+            this.lblChar8.Visible = false;
+            // 
+            // lblChar7
+            // 
+            this.lblChar7.AutoSize = true;
+            this.lblChar7.Location = new System.Drawing.Point(327, 228);
+            this.lblChar7.Name = "lblChar7";
+            this.lblChar7.Size = new System.Drawing.Size(92, 13);
+            this.lblChar7.TabIndex = 44;
+            this.lblChar7.Text = "Choose Character";
+            this.lblChar7.Visible = false;
+            // 
+            // lblChar6
+            // 
+            this.lblChar6.AutoSize = true;
+            this.lblChar6.Location = new System.Drawing.Point(327, 143);
+            this.lblChar6.Name = "lblChar6";
+            this.lblChar6.Size = new System.Drawing.Size(92, 13);
+            this.lblChar6.TabIndex = 43;
+            this.lblChar6.Text = "Choose Character";
+            this.lblChar6.Visible = false;
+            // 
+            // lblChar5
+            // 
+            this.lblChar5.AutoSize = true;
+            this.lblChar5.Location = new System.Drawing.Point(327, 53);
+            this.lblChar5.Name = "lblChar5";
+            this.lblChar5.Size = new System.Drawing.Size(92, 13);
+            this.lblChar5.TabIndex = 42;
+            this.lblChar5.Text = "Choose Character";
+            this.lblChar5.Visible = false;
+            // 
+            // lblChar3
+            // 
+            this.lblChar3.AutoSize = true;
+            this.lblChar3.Location = new System.Drawing.Point(33, 228);
+            this.lblChar3.Name = "lblChar3";
+            this.lblChar3.Size = new System.Drawing.Size(92, 13);
+            this.lblChar3.TabIndex = 41;
+            this.lblChar3.Text = "Choose Character";
+            this.lblChar3.Visible = false;
+            // 
+            // lblChar4
+            // 
+            this.lblChar4.AutoSize = true;
+            this.lblChar4.Location = new System.Drawing.Point(33, 322);
+            this.lblChar4.Name = "lblChar4";
+            this.lblChar4.Size = new System.Drawing.Size(92, 13);
+            this.lblChar4.TabIndex = 40;
+            this.lblChar4.Text = "Choose Character";
+            this.lblChar4.Visible = false;
+            // 
+            // lblChar2
+            // 
+            this.lblChar2.AutoSize = true;
+            this.lblChar2.Location = new System.Drawing.Point(33, 144);
+            this.lblChar2.Name = "lblChar2";
+            this.lblChar2.Size = new System.Drawing.Size(92, 13);
+            this.lblChar2.TabIndex = 39;
+            this.lblChar2.Text = "Choose Character";
+            // 
+            // lblChar1
+            // 
+            this.lblChar1.AutoSize = true;
+            this.lblChar1.Location = new System.Drawing.Point(33, 53);
+            this.lblChar1.Name = "lblChar1";
+            this.lblChar1.Size = new System.Drawing.Size(92, 13);
+            this.lblChar1.TabIndex = 38;
+            this.lblChar1.Text = "Choose Character";
             // 
             // CharacterSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblChar8);
+            this.Controls.Add(this.lblChar7);
+            this.Controls.Add(this.lblChar6);
+            this.Controls.Add(this.lblChar5);
+            this.Controls.Add(this.lblChar3);
+            this.Controls.Add(this.lblChar4);
+            this.Controls.Add(this.lblChar2);
+            this.Controls.Add(this.lblChar1);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.cmbStageType);
             this.Controls.Add(this.label2);
@@ -581,5 +675,13 @@
         private System.Windows.Forms.ComboBox cmbStageType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label lblChar8;
+        private System.Windows.Forms.Label lblChar7;
+        private System.Windows.Forms.Label lblChar6;
+        private System.Windows.Forms.Label lblChar5;
+        private System.Windows.Forms.Label lblChar3;
+        private System.Windows.Forms.Label lblChar4;
+        private System.Windows.Forms.Label lblChar2;
+        private System.Windows.Forms.Label lblChar1;
     }
 }

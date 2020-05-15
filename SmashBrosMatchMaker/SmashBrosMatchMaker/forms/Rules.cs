@@ -24,6 +24,8 @@ namespace SmashBrosMatchMaker
 
         private void bttConfirm_Click(object sender, EventArgs e)
         {
+            if (isEmpty())
+                return;
             controller.firstGame = firstGame;
             int numPlayers;
             if (firstGame)
@@ -42,25 +44,46 @@ namespace SmashBrosMatchMaker
             if (numPlayers <= 8 && numPlayers >= 2)
             {
                 this.Hide();
-                controller.openSelectionScreen(numPlayers, isItems, itemPercent);
+                controller.openSelectionScreen(numPlayers, Convert.ToInt32(txtHumanPlayers.Text), isItems, itemPercent);
             }
             else
                 lblError.Text = "Please select a valid number of players";
             
         }
-      public void newGame()
-      {
+        public void newGame()
+        {
             firstGame = false;
             txtAIPlayers.Visible = false;
             txtHumanPlayers.Visible = false;
             lblHumans.Visible = false;
             label2.Visible = false;
-      }
+        }
+        public bool isEmpty()
+        {
+            int i;
+            if(txtAIPlayers.Text == "" || txtHumanPlayers.Text == "")
+            {
+                lblError.Text = "Please input valid number of players";
+                return true;
+            }
+            if (!int.TryParse(txtAIPlayers.Text, out i) || !int.TryParse(txtHumanPlayers.Text, out i))
+            {
+                lblError.Text = "Please input valid number of players";
+                return true;
+            }
+            if (cmbGameType.SelectedItem == null)
+            {
+                lblError.Text = "Please input valid game type";
+                return true;
+            }
+            if(rdbNo.Checked == false && rdbYes.Checked ==false)
+            {
+                lblError.Text = "Please select if you would like items";
+                return true;
+            }
+            return false;
+        }
 
-      private void label4_Click(object sender, EventArgs e)
-      {
-
-      }
 
       private void rdbYes_CheckedChanged(object sender, EventArgs e)
       {

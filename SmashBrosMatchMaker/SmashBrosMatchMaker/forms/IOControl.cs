@@ -58,11 +58,15 @@ namespace SmashBrosMatchMaker.forms
             }
             
         }
-        public void openSelectionScreen(int numPlayers, bool isItems, int itemPercent)
+        public void openSelectionScreen(int numPlayers,int humanPlayers, bool isItems, int itemPercent)
         {
+            
             this.numPlayers = numPlayers;
             if(firstGame)
+            {
                 selectionForm.numPlayers = numPlayers;
+                selectionForm.humanPlayers = humanPlayers;
+            }
             selectionForm.firstGame = firstGame;
             selectionForm.isItems = isItems;
             selectionForm.itemPercent = itemPercent;

@@ -31,6 +31,7 @@
             this.cmbWinner = new System.Windows.Forms.ComboBox();
             this.lblPlayer1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbWinner
@@ -48,7 +49,7 @@
             this.lblPlayer1.Name = "lblPlayer1";
             this.lblPlayer1.Size = new System.Drawing.Size(47, 13);
             this.lblPlayer1.TabIndex = 13;
-            this.lblPlayer1.Text = "Winner: ";            
+            this.lblPlayer1.Text = "Winner: ";
             // 
             // button1
             // 
@@ -60,11 +61,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(100, 75);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(10, 13);
+            this.lblError.TabIndex = 16;
+            this.lblError.Text = " ";
+            // 
             // Choose_Winner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 311);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbWinner);
             this.Controls.Add(this.lblPlayer1);
@@ -80,5 +91,6 @@
       private System.Windows.Forms.ComboBox cmbWinner;
       private System.Windows.Forms.Label lblPlayer1;
       private System.Windows.Forms.Button button1;
-   }
+        private System.Windows.Forms.Label lblError;
+    }
 }

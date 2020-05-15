@@ -43,6 +43,7 @@
             this.lblCharacter = new System.Windows.Forms.Label();
             this.lblPlayer = new System.Windows.Forms.Label();
             this.lblStage = new System.Windows.Forms.Label();
+            this.lblType = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -181,11 +182,21 @@
             this.lblStage.TabIndex = 21;
             this.lblStage.Text = "0";
             // 
+            // lblType
+            // 
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(55, 37);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(35, 13);
+            this.lblType.TabIndex = 22;
+            this.lblType.Text = "label2";
+            // 
             // Records
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblType);
             this.Controls.Add(this.lblStage);
             this.Controls.Add(this.lblPlayer);
             this.Controls.Add(this.lblCharacter);
@@ -225,5 +236,6 @@
         private System.Windows.Forms.Label lblCharacter;
         private System.Windows.Forms.Label lblPlayer;
         private System.Windows.Forms.Label lblStage;
+        private System.Windows.Forms.Label lblType;
     }
 }

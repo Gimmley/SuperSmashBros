@@ -17,7 +17,7 @@ namespace SmashBrosMatchMaker
     {
         static IOControl controller = IOControl.Instance;
         public int numPlayers { get; set; }
-
+        public int humanPlayers { get; set; }
         public bool isItems { get; set; }
         public bool firstGame { set; get; }
 
@@ -61,6 +61,15 @@ namespace SmashBrosMatchMaker
             nameLabel.Add(lblname7);
             nameLabel.Add(lblname8);
 
+            nameLabel.Add(lblChar1);
+            nameLabel.Add(lblChar2);
+            nameLabel.Add(lblChar3);
+            nameLabel.Add(lblChar4);
+            nameLabel.Add(lblChar5);
+            nameLabel.Add(lblChar6);
+            nameLabel.Add(lblChar7);
+            nameLabel.Add(lblChar8);
+
             numberLabel.Add(lblPlayer1);
             numberLabel.Add(lblPlayer2);
             numberLabel.Add(lblPlayer3);
@@ -97,6 +106,7 @@ namespace SmashBrosMatchMaker
                 i++;
             }
             i = 0;
+            int charCount = 0;
             foreach (Label label in nameLabel)
             {
                 if (label.Name.Contains((i + 1).ToString()) && i < numPlayers)
@@ -104,14 +114,28 @@ namespace SmashBrosMatchMaker
                     label.Visible = true;
                 }
                 i++;
+                if (label.Name.Contains("Char"+(charCount + 1).ToString()) && charCount < numPlayers)
+                {
+                    label.Visible = true;
+                    charCount++;
+                }
+                
             }
             i = 0;
+            int aiCount = 1;
             foreach (Label label in numberLabel)
             {
                 if (label.Name.Contains((i + 1).ToString()) && i < numPlayers)
                 {
                     label.Visible = true;
                 }
+                if (i < humanPlayers)
+                    label.Text = "Human " + (i+1).ToString();
+                else
+                {
+                    label.Text = "AI " + (aiCount).ToString();
+                    aiCount++;
+                }   
                 i++;
             }
 
@@ -159,7 +183,17 @@ namespace SmashBrosMatchMaker
 
                     if (box.Visible == true)
                     {
-                        playerList.Add(new Player(i, box.Text));
+                        foreach(Label label in numberLabel)
+                        {
+                            if(label.Name.Contains(i.ToString()))
+                            {
+                                if(label.Text.Contains("AI"))
+                                    playerList.Add(new Player(i, box.Text, "AI"));
+                                if (label.Text.Contains("Human"))
+                                    playerList.Add(new Player(i, box.Text, "Human"));
+                            }
+                        }
+                        
                         foreach (ComboBox cmbBox in characterBoxes)
                         {
                             if (cmbBox.Name.Contains(i.ToString()))
@@ -202,5 +236,7 @@ namespace SmashBrosMatchMaker
             this.Hide();
             controller.openChooseWinner(numPlayers,stage);
         }
+
+
     }
 }

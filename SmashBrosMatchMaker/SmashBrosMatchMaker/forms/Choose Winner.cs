@@ -39,9 +39,20 @@ namespace SmashBrosMatchMaker.forms
                 cmbWinner.Items.Add(player.playerName);
          }
       }
+      public bool isEmpty()
+        {
+            if (cmbWinner.SelectedItem == null)
+            {
+                lblError.Text = "Please select Winner";
+                return true;
+            }
+            return false;
+        }
 
       private void button1_Click(object sender, EventArgs e)
       {
+         if (isEmpty())
+                return;
          string winnerName = cmbWinner.GetItemText(this.cmbWinner.SelectedItem);
          
          foreach (Player player in playerList)

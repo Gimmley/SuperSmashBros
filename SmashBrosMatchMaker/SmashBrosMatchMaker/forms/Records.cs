@@ -26,14 +26,15 @@ namespace SmashBrosMatchMaker.forms
       {
          lblPlayer.Text = winner.playerName;
          lblCharacter.Text = winner.currentCharacter.name;
-            lblStage.Text = currentStage.name;
-            if (Convert.ToInt32(lblMostWinsSet.Text) < winner.winCount)
-            {
-                lblMostWinsSet.Text = winner.winCount.ToString();
-                lblMostWinName.Text = winner.playerName;
-            }
-            lblHotStreakSet.Text = winner.winStreak.ToString();
-            lblHotStreakName.Text = winner.playerName;
+         lblStage.Text = currentStage.name;
+         lblType.Text = winner.playerType + " Player:";
+         if (Convert.ToInt32(lblMostWinsSet.Text) < winner.winCount)
+         {
+             lblMostWinsSet.Text = winner.winCount.ToString();
+             lblMostWinName.Text = winner.playerName;
+         }
+         lblHotStreakSet.Text = winner.winStreak.ToString();
+         lblHotStreakName.Text = winner.playerName;
                 
       }
 

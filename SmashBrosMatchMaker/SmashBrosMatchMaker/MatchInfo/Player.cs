@@ -11,11 +11,13 @@ namespace SmashBrosMatchMaker.MatchInfo
         List<Character> characterList = new List<Character>();
         public Character currentCharacter { set; get; }
         public int winCount { set; get; }
+        public string playerType { set; get; }
         public int winStreak { set; get; }
         public int playerID { set; get; }
         public string playerName { set; get; }
-        public Player(int playerID, string name)
+        public Player(int playerID, string name, string playerType)
         {
+            this.playerType = playerType;
             this.playerID = playerID;
             playerName = name;
             winCount = 0;
