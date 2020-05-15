@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using SmashBrosMatchMaker.Database.Entities;
 
-namespace SmashBrosMatchMaker.Database.Entities
+namespace SmashBrosMatchMaker.Database
 {
     public partial class DatabaseContext : DbContext
     {
