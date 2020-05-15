@@ -7,13 +7,15 @@ using SmashBrosMatchMaker.Database.Entities;
 
 namespace SmashBrosMatchMaker.MatchInfo
 {
-    class Match
+    public class Match
     {
         
         public string MatchType;
+        public int numPlayers;
         public List<Player> playerList;
         public List<Stage> stageList;
         public List<Items> itemList;
+        public Dictionary<Player, CharacterTable> characterList;
         public Match()
         {
            
@@ -25,6 +27,10 @@ namespace SmashBrosMatchMaker.MatchInfo
         public void addStage(Stage stage)
         {
             stageList.Add(stage);
+        }
+        public void addCharacter(Player owner ,CharacterTable newChar)
+        {
+            characterList.Add(owner, newChar);
         }
     }
 }

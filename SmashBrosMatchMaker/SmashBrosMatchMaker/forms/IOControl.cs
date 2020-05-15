@@ -1,4 +1,5 @@
 ﻿using SmashBrosMatchMaker.Database.Entities;
+using SmashBrosMatchMaker.MatchInfo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,7 @@ namespace SmashBrosMatchMaker.forms
             selectionForm = new CharacterSelection();
             chooseWinnerForm = new Choose_Winner();
             recordsForm = new Records();
+            creationForm = new CharacterCreation();
 
         }
         public List<Player> GetPlayers()
@@ -77,23 +79,28 @@ namespace SmashBrosMatchMaker.forms
             selectionForm.makeVisible();
             selectionForm.Show();
         }
-        public void openChooseWinner(int numPlayers,Stage stage)
+
+        public void showSelectionScreen()
+        {
+            selectionForm.Show();
+        }
+        public void openChooseWinner(Match match)
         {
             if(firstGame)
             {
-                chooseWinnerForm.setPlayers(playerList);
+                chooseWinnerForm.setPlayers(match.playerList);
                 chooseWinnerForm.fillCombobox();
-                chooseWinnerForm.numPlayers = numPlayers;
+                chooseWinnerForm.numPlayers = match.numPlayers;
             }
-            chooseWinnerForm.stage = stage;
+            chooseWinnerForm.match = match;
             chooseWinnerForm.Show();
         }
 
-        public void openRecords(Player winner,Stage stage)
+        public void openRecords(Player winner,Match match)
         {
-            recordsForm.currentStage = stage;
+            recordsForm.currentStage = match.stageList.Last();
             recordsForm.winner = winner;
-            recordsForm.fillFields();
+            recordsForm.fillFields(match);
             recordsForm.Show();
         }
 
@@ -104,7 +111,7 @@ namespace SmashBrosMatchMaker.forms
         }
         public void openCreationScreen()
         {
-
+            creationForm.Show();
         }
    }
 }

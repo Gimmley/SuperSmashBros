@@ -25,12 +25,14 @@ namespace SmashBrosMatchMaker
         public int itemPercent { get; set; }
 
         Match match = new Match();
+        
 
         List<ComboBox> characterBoxes = new List<ComboBox>();
-        List<TextBox> NameBoxes = new List<TextBox>();
+
+        List<ComboBox> playerBoxes = new List<ComboBox>();
         List<Label> nameLabel = new List<Label>();
         List<Label> numberLabel = new List<Label>();
-        List<RadioButton> buttonList = new List<RadioButton>();
+        
         public CharacterSelection()
         {
             InitializeComponent();
@@ -38,6 +40,8 @@ namespace SmashBrosMatchMaker
         }
         public void populateLists()
         {
+            //populate playerCombo box with all players from database
+            
             characterBoxes.Add(cmbChar1);
             characterBoxes.Add(cmbChar2);
             characterBoxes.Add(cmbChar3);
@@ -47,7 +51,14 @@ namespace SmashBrosMatchMaker
             characterBoxes.Add(cmbChar7);
             characterBoxes.Add(cmbChar8);
 
-            characterBoxes.Add(cmbPlayerList1);
+            playerBoxes.Add(cmbPlayerList1);
+            playerBoxes.Add(cmbPlayerList2);
+            playerBoxes.Add(cmbPlayerList3);
+            playerBoxes.Add(cmbPlayerList4);
+            playerBoxes.Add(cmbPlayerList5);
+            playerBoxes.Add(cmbPlayerList6);
+            playerBoxes.Add(cmbPlayerList7);
+            playerBoxes.Add(cmbPlayerList8);
 
             nameLabel.Add(lblChoosePlayer1);
             nameLabel.Add(lblChoosePlayer2);
@@ -76,34 +87,26 @@ namespace SmashBrosMatchMaker
             numberLabel.Add(lblPlayer7);
             numberLabel.Add(lblPlayer8);
 
-            buttonList.Add(rdbAI1);
-            buttonList.Add(rdbAI2);
-            buttonList.Add(rdbAI3);
-            buttonList.Add(rdbAI4);
-            buttonList.Add(rdbAI5);
-            buttonList.Add(rdbAI6);
-            buttonList.Add(rdbAI7);
-            buttonList.Add(rdbAI8);
+
         }
         public void newGame()
         {
-            foreach (TextBox txt in NameBoxes)
-                txt.ReadOnly = true;
+            
             lblError.Text = "";
         }
         public void makeVisible()
         {
             int i = 0;
-            foreach(TextBox box in NameBoxes )
+            foreach (ComboBox box in characterBoxes)
             {
-                if(box.Name.Contains((i+1).ToString()) && i < numPlayers)
+                if (box.Name.Contains((i + 1).ToString()) && i < numPlayers)
                 {
                     box.Visible = true;
                 }
                 i++;
             }
             i = 0;
-            foreach (ComboBox box in characterBoxes)
+            foreach (ComboBox box in playerBoxes)
             {
                 if (box.Name.Contains((i + 1).ToString()) && i < numPlayers)
                 {
@@ -141,16 +144,14 @@ namespace SmashBrosMatchMaker
         }
         private bool isEmpty()
         {
-            
-            foreach (TextBox box in NameBoxes)
+            foreach (ComboBox box in characterBoxes)
             {
-                if (box.Text == "" && box.Visible == true)
+                if (box.SelectedItem == null && box.Visible == true)
                 {
                     return true;
                 }
-                
             }
-            foreach (ComboBox box in characterBoxes)
+            foreach (ComboBox box in playerBoxes)
             {
                 if (box.SelectedItem == null && box.Visible == true)
                 {
@@ -167,94 +168,44 @@ namespace SmashBrosMatchMaker
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            match.numPlayers = numPlayers;
             if(isEmpty())
             {
                 lblError.Text = "Please do not leave any options empty";
                 return;
             }
-            Stage stage;
+            
             
             int i = 1;
-            if(firstGame)
+            
+            foreach (ComboBox box in playerBoxes)
             {
-                foreach (TextBox box in NameBoxes)
-                {
 
-                    if (box.Visible == true)
-                    {
-                        foreach(Label label in numberLabel)
-                        {
-                            if(label.Name.Contains(i.ToString()))
-                            {
-                                if (label.Text.Contains("AI"))
-                                {
-                                    Database.Entities.Player p = new Database.Entities.Player
-                                    {
-                                        PlayerName = box.Text,
-                                        PlayerTypeId = 2,
-                                    };
-                                    match.playerList.Add(p);
-                                }
-                                    
-                                if (label.Text.Contains("Human"))
-                                {
-                                    Database.Entities.Player p = new Database.Entities.Player
-                                    {
-                                        PlayerName = box.Text,
-                                        PlayerTypeId = 1,
-                                    };
-                                    match.playerList.Add(p);
-                                }
-                                    
-                            }
-                        }
-                        
-                        foreach (ComboBox cmbBox in characterBoxes)
-                        {
-                          if
-                          Database.DatabaseContext.Instance.CharacterTable.Where(foundChar => foundChar.CharacterName == cmbStageType.SelectedItem.ToString()).First();
-                                
-
-                        }
-                        i++;
-                    }
-                }
-                stage = new Stage(cmbStage.SelectedItem.ToString(),cmbStageType.SelectedItem.ToString());
-                
-                controller.SetPlayerList(playerList);
-            }
-            else
-            {
-                playerList = controller.GetPlayers();
-                foreach (Player player in playerList)
+                if (box.Visible == true)
                 {
-                    
+                    Player p = Database.DatabaseContext.Instance.Player.Where(foundPlayer => foundPlayer.PlayerName == box.SelectedItem.ToString()).First();
+                    match.playerList.Add(p);
                     foreach (ComboBox cmbBox in characterBoxes)
                     {
-                        if (cmbBox.Name.Contains(i.ToString()))
+                        if(box.Name.Contains(i.ToString()) && cmbBox.Name.Contains(i.ToString()))
                         {
-
-                            //playerList[player.playerID - 1].addCharacter(new Character(cmbBox.SelectedItem.ToString()));
-                            //playerList[player.playerID - 1].currentCharacter = new Character(cmbBox.SelectedItem.ToString());
+                             CharacterTable newChar = Database.DatabaseContext.Instance.CharacterTable.Where(foundChar => foundChar.CharacterName == cmbBox.SelectedItem.ToString()).First();
+                             match.addCharacter(p, newChar);
                         }
-                        i++;
+                          
                     }
-                    
+                    i++;
                 }
-                //stage = new Stage(cmbStage.SelectedItem.ToString(), cmbStageType.SelectedItem.ToString());
-                Stage stage = Database.DatabaseContext.Instance.Stage.Where(foundStage => foundStage.StageName == cmbStage.SelectedItem.ToString()).First();
-                StageType stageType = Database.DatabaseContext.Instance.StageType.Where(foundtype => foundtype.StageTypeName == cmbStageType.SelectedItem.ToString()).First();
             }
-                
-
             
             this.Hide();
-            controller.openChooseWinner(numPlayers,stage);
+            controller.openChooseWinner(match);
         }
 
         private void bttCreate_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            controller.openCreationScreen();
         }
     }
 }

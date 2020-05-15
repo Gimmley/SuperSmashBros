@@ -95,6 +95,7 @@
             this.lblPlayer1.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer1.TabIndex = 1;
             this.lblPlayer1.Text = "Player 1";
+            this.lblPlayer1.Visible = false;
             // 
             // lblPlayer2
             // 
@@ -104,6 +105,7 @@
             this.lblPlayer2.Size = new System.Drawing.Size(45, 13);
             this.lblPlayer2.TabIndex = 2;
             this.lblPlayer2.Text = "Player 2";
+            this.lblPlayer2.Visible = false;
             // 
             // lblPlayer3
             // 
@@ -165,7 +167,7 @@
             this.lblPlayer8.Text = "Player 8";
             this.lblPlayer8.Visible = false;
             // 
-            // cmbPlayer7
+            // cmbChar7
             // 
             this.cmbChar7.FormattingEnabled = true;
             this.cmbChar7.Items.AddRange(new object[] {
@@ -178,12 +180,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar7.Location = new System.Drawing.Point(425, 246);
-            this.cmbChar7.Name = "cmbPlayer7";
+            this.cmbChar7.Name = "cmbChar7";
             this.cmbChar7.Size = new System.Drawing.Size(121, 21);
             this.cmbChar7.TabIndex = 9;
             this.cmbChar7.Visible = false;
             // 
-            // cmbPlayer6
+            // cmbChar6
             // 
             this.cmbChar6.FormattingEnabled = true;
             this.cmbChar6.Items.AddRange(new object[] {
@@ -196,12 +198,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar6.Location = new System.Drawing.Point(425, 157);
-            this.cmbChar6.Name = "cmbPlayer6";
+            this.cmbChar6.Name = "cmbChar6";
             this.cmbChar6.Size = new System.Drawing.Size(121, 21);
             this.cmbChar6.TabIndex = 10;
             this.cmbChar6.Visible = false;
             // 
-            // cmbPlayer5
+            // cmbChar5
             // 
             this.cmbChar5.FormattingEnabled = true;
             this.cmbChar5.Items.AddRange(new object[] {
@@ -214,12 +216,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar5.Location = new System.Drawing.Point(425, 80);
-            this.cmbChar5.Name = "cmbPlayer5";
+            this.cmbChar5.Name = "cmbChar5";
             this.cmbChar5.Size = new System.Drawing.Size(121, 21);
             this.cmbChar5.TabIndex = 11;
             this.cmbChar5.Visible = false;
             // 
-            // cmbPlayer1
+            // cmbChar1
             // 
             this.cmbChar1.FormattingEnabled = true;
             this.cmbChar1.Items.AddRange(new object[] {
@@ -232,11 +234,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar1.Location = new System.Drawing.Point(142, 80);
-            this.cmbChar1.Name = "cmbPlayer1";
+            this.cmbChar1.Name = "cmbChar1";
             this.cmbChar1.Size = new System.Drawing.Size(121, 21);
             this.cmbChar1.TabIndex = 12;
+            this.cmbChar1.Visible = false;
             // 
-            // cmbPlayer2
+            // cmbChar2
             // 
             this.cmbChar2.FormattingEnabled = true;
             this.cmbChar2.Items.AddRange(new object[] {
@@ -249,11 +252,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar2.Location = new System.Drawing.Point(142, 157);
-            this.cmbChar2.Name = "cmbPlayer2";
+            this.cmbChar2.Name = "cmbChar2";
             this.cmbChar2.Size = new System.Drawing.Size(121, 21);
             this.cmbChar2.TabIndex = 13;
+            this.cmbChar2.Visible = false;
             // 
-            // cmbPlayer3
+            // cmbChar3
             // 
             this.cmbChar3.FormattingEnabled = true;
             this.cmbChar3.Items.AddRange(new object[] {
@@ -266,12 +270,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar3.Location = new System.Drawing.Point(134, 243);
-            this.cmbChar3.Name = "cmbPlayer3";
+            this.cmbChar3.Name = "cmbChar3";
             this.cmbChar3.Size = new System.Drawing.Size(121, 21);
             this.cmbChar3.TabIndex = 14;
             this.cmbChar3.Visible = false;
             // 
-            // cmbPlayer4
+            // cmbChar4
             // 
             this.cmbChar4.FormattingEnabled = true;
             this.cmbChar4.Items.AddRange(new object[] {
@@ -284,12 +288,12 @@
             "Samus",
             "Yoshi"});
             this.cmbChar4.Location = new System.Drawing.Point(131, 345);
-            this.cmbChar4.Name = "cmbPlayer4";
+            this.cmbChar4.Name = "cmbChar4";
             this.cmbChar4.Size = new System.Drawing.Size(121, 21);
             this.cmbChar4.TabIndex = 15;
             this.cmbChar4.Visible = false;
             // 
-            // cmbPlayer8
+            // cmbChar8
             // 
             this.cmbChar8.FormattingEnabled = true;
             this.cmbChar8.Items.AddRange(new object[] {
@@ -302,7 +306,7 @@
             "Samus",
             "Yoshi"});
             this.cmbChar8.Location = new System.Drawing.Point(425, 345);
-            this.cmbChar8.Name = "cmbPlayer8";
+            this.cmbChar8.Name = "cmbChar8";
             this.cmbChar8.Size = new System.Drawing.Size(121, 21);
             this.cmbChar8.TabIndex = 16;
             this.cmbChar8.Visible = false;
@@ -428,6 +432,7 @@
             this.lblChar2.Size = new System.Drawing.Size(92, 13);
             this.lblChar2.TabIndex = 39;
             this.lblChar2.Text = "Choose Character";
+            this.lblChar2.Visible = false;
             // 
             // lblChar1
             // 
@@ -437,6 +442,7 @@
             this.lblChar1.Size = new System.Drawing.Size(92, 13);
             this.lblChar1.TabIndex = 38;
             this.lblChar1.Text = "Choose Character";
+            this.lblChar1.Visible = false;
             // 
             // lblChoosePlayer1
             // 
@@ -446,14 +452,18 @@
             this.lblChoosePlayer1.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer1.TabIndex = 46;
             this.lblChoosePlayer1.Text = "Choose a Player";
+            this.lblChoosePlayer1.Visible = false;
             // 
             // cmbPlayerList1
             // 
             this.cmbPlayerList1.FormattingEnabled = true;
+            this.cmbPlayerList1.Items.AddRange(new object[] {
+            "Bob"});
             this.cmbPlayerList1.Location = new System.Drawing.Point(142, 53);
             this.cmbPlayerList1.Name = "cmbPlayerList1";
             this.cmbPlayerList1.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList1.TabIndex = 47;
+            this.cmbPlayerList1.Visible = false;
             // 
             // bttCreate
             // 
@@ -473,6 +483,7 @@
             this.lblChoosePlayer8.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer8.TabIndex = 49;
             this.lblChoosePlayer8.Text = "Choose a Player";
+            this.lblChoosePlayer8.Visible = false;
             // 
             // lblChoosePlayer5
             // 
@@ -482,6 +493,7 @@
             this.lblChoosePlayer5.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer5.TabIndex = 50;
             this.lblChoosePlayer5.Text = "Choose a Player";
+            this.lblChoosePlayer5.Visible = false;
             // 
             // lblChoosePlayer6
             // 
@@ -491,6 +503,7 @@
             this.lblChoosePlayer6.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer6.TabIndex = 51;
             this.lblChoosePlayer6.Text = "Choose a Player";
+            this.lblChoosePlayer6.Visible = false;
             // 
             // lblChoosePlayer4
             // 
@@ -500,6 +513,7 @@
             this.lblChoosePlayer4.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer4.TabIndex = 52;
             this.lblChoosePlayer4.Text = "Choose a Player";
+            this.lblChoosePlayer4.Visible = false;
             // 
             // lblChoosePlayer2
             // 
@@ -509,6 +523,7 @@
             this.lblChoosePlayer2.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer2.TabIndex = 53;
             this.lblChoosePlayer2.Text = "Choose a Player";
+            this.lblChoosePlayer2.Visible = false;
             // 
             // lblChoosePlayer3
             // 
@@ -518,6 +533,7 @@
             this.lblChoosePlayer3.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer3.TabIndex = 54;
             this.lblChoosePlayer3.Text = "Choose a Player";
+            this.lblChoosePlayer3.Visible = false;
             // 
             // cmbPlayerList3
             // 
@@ -526,14 +542,18 @@
             this.cmbPlayerList3.Name = "cmbPlayerList3";
             this.cmbPlayerList3.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList3.TabIndex = 55;
+            this.cmbPlayerList3.Visible = false;
             // 
             // cmbPlayerList2
             // 
             this.cmbPlayerList2.FormattingEnabled = true;
+            this.cmbPlayerList2.Items.AddRange(new object[] {
+            "joe"});
             this.cmbPlayerList2.Location = new System.Drawing.Point(142, 130);
             this.cmbPlayerList2.Name = "cmbPlayerList2";
             this.cmbPlayerList2.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList2.TabIndex = 56;
+            this.cmbPlayerList2.Visible = false;
             // 
             // cmbPlayerList4
             // 
@@ -542,6 +562,7 @@
             this.cmbPlayerList4.Name = "cmbPlayerList4";
             this.cmbPlayerList4.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList4.TabIndex = 57;
+            this.cmbPlayerList4.Visible = false;
             // 
             // cmbPlayerList5
             // 
@@ -550,6 +571,7 @@
             this.cmbPlayerList5.Name = "cmbPlayerList5";
             this.cmbPlayerList5.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList5.TabIndex = 58;
+            this.cmbPlayerList5.Visible = false;
             // 
             // cmbPlayerList6
             // 
@@ -558,6 +580,7 @@
             this.cmbPlayerList6.Name = "cmbPlayerList6";
             this.cmbPlayerList6.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList6.TabIndex = 59;
+            this.cmbPlayerList6.Visible = false;
             // 
             // cmbPlayerList7
             // 
@@ -566,6 +589,7 @@
             this.cmbPlayerList7.Name = "cmbPlayerList7";
             this.cmbPlayerList7.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList7.TabIndex = 60;
+            this.cmbPlayerList7.Visible = false;
             // 
             // cmbPlayerList8
             // 
@@ -574,6 +598,7 @@
             this.cmbPlayerList8.Name = "cmbPlayerList8";
             this.cmbPlayerList8.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList8.TabIndex = 61;
+            this.cmbPlayerList8.Visible = false;
             // 
             // lblChoosePlayer7
             // 
@@ -583,6 +608,7 @@
             this.lblChoosePlayer7.Size = new System.Drawing.Size(84, 13);
             this.lblChoosePlayer7.TabIndex = 62;
             this.lblChoosePlayer7.Text = "Choose a Player";
+            this.lblChoosePlayer7.Visible = false;
             // 
             // CharacterSelection
             // 

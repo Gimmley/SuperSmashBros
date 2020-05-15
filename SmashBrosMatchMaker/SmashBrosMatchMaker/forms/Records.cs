@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SmashBrosMatchMaker.Database.Entities;
 using SmashBrosMatchMaker.MatchInfo;
 
 namespace SmashBrosMatchMaker.forms
@@ -22,19 +23,25 @@ namespace SmashBrosMatchMaker.forms
       }
         
 
-      public void fillFields()
+      public void fillFields(Match match)
       {
-         lblPlayer.Text = winner.playerName;
-         lblCharacter.Text = winner.currentCharacter.name;
-         lblStage.Text = currentStage.name;
-         lblType.Text = winner.playerType + " Player:";
-         if (Convert.ToInt32(lblMostWinsSet.Text) < winner.winCount)
+         lblPlayer.Text = winner.PlayerName;
+         foreach(KeyValuePair<Player,CharacterTable> entry in match.characterList)
+         {
+                if(winner == entry.Key)
+                {
+                    lblCharacter.Text = entry.Value.CharacterName;
+                }
+         }
+         lblStage.Text = match.stageList.Last().StageName;
+         lblType.Text = winner.PlayerType + " Player:";
+         /*if (Convert.ToInt32(lblMostWinsSet.Text) < winner.winCount)
          {
              lblMostWinsSet.Text = winner.winCount.ToString();
-             lblMostWinName.Text = winner.playerName;
-         }
-         lblHotStreakSet.Text = winner.winStreak.ToString();
-         lblHotStreakName.Text = winner.playerName;
+             lblMostWinName.Text = winner.PlayerName;
+         }*/
+         //lblHotStreakSet.Text = winner.winStreak.ToString();
+         lblHotStreakName.Text = winner.PlayerName;
                 
       }
 

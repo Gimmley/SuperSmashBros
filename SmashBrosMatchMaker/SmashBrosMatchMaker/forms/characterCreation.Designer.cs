@@ -32,6 +32,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.rdbAi = new System.Windows.Forms.RadioButton();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btConfirm
@@ -71,16 +72,26 @@
             this.rdbAi.Text = "Is this player an AI";
             this.rdbAi.UseVisualStyleBackColor = true;
             // 
-            // characterCreation
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(178, 158);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(10, 13);
+            this.lblError.TabIndex = 5;
+            this.lblError.Text = " ";
+            // 
+            // CharacterCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 198);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.rdbAi);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btConfirm);
-            this.Name = "characterCreation";
+            this.Name = "CharacterCreation";
             this.Text = "characterCreation";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -93,5 +104,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.RadioButton rdbAi;
+        private System.Windows.Forms.Label lblError;
     }
 }
