@@ -47,6 +47,7 @@ namespace SmashBrosMatchMaker.forms
 
         List<Player> playerList = new List<Player>();
         public int numPlayers;
+        public int humanPlayers;
         public bool firstGame = true;
         public void SetPlayerList(List<Player> newPlayers)
         {
@@ -60,7 +61,7 @@ namespace SmashBrosMatchMaker.forms
         }
         public void openSelectionScreen(int numPlayers,int humanPlayers, bool isItems, int itemPercent)
         {
-            
+            this.humanPlayers = humanPlayers;
             this.numPlayers = numPlayers;
             if(firstGame)
             {

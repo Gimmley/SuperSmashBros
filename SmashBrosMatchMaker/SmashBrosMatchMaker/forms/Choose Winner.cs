@@ -66,7 +66,9 @@ namespace SmashBrosMatchMaker.forms
             else
                 player.winStreak =  0;
          }
+            cmbWinner.Items.Clear();
          this.Hide();
+         
          controller.openRecords(winner,stage);
       }
    }
