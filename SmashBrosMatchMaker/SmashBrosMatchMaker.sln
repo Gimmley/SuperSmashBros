@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmashBrosMatchMaker", "SmashBrosMatchMaker\SmashBrosMatchMaker.csproj", "{824D263B-7EA4-4AE8-8A25-00C17DA2675E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmashBrosMatchMaker.Database", "SmashBrosMatchMaker.Database\SmashBrosMatchMaker.Database.csproj", "{9CC61AA5-27C7-4AC0-8A10-32F7F455155A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{824D263B-7EA4-4AE8-8A25-00C17DA2675E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{824D263B-7EA4-4AE8-8A25-00C17DA2675E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{824D263B-7EA4-4AE8-8A25-00C17DA2675E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC61AA5-27C7-4AC0-8A10-32F7F455155A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC61AA5-27C7-4AC0-8A10-32F7F455155A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC61AA5-27C7-4AC0-8A10-32F7F455155A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC61AA5-27C7-4AC0-8A10-32F7F455155A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
