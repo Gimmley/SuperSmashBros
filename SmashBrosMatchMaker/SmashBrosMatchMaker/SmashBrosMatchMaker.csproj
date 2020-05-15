@@ -108,6 +108,7 @@
     </Compile>
     <Compile Include="MatchInfo\Player.cs" />
     <Compile Include="MatchInfo\records.cs" />
+    <Compile Include="MatchInfo\Stage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\Character Selection.resx">

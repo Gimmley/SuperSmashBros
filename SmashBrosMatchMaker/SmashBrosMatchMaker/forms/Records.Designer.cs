@@ -29,7 +29,6 @@
       private void InitializeComponent()
       {
             this.label1 = new System.Windows.Forms.Label();
-            this.txbNumBroken = new System.Windows.Forms.TextBox();
             this.lblMostWins = new System.Windows.Forms.Label();
             this.lblMostWinsSet = new System.Windows.Forms.Label();
             this.lblHotStreak = new System.Windows.Forms.Label();
@@ -38,27 +37,22 @@
             this.lblHotStreakName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txbPlayer = new System.Windows.Forms.TextBox();
-            this.txbCharacter = new System.Windows.Forms.TextBox();
-            this.txbMove = new System.Windows.Forms.TextBox();
             this.btnNewMatch = new System.Windows.Forms.Button();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblmove = new System.Windows.Forms.Label();
+            this.lblCharacter = new System.Windows.Forms.Label();
+            this.lblPlayer = new System.Windows.Forms.Label();
+            this.lblStage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 135);
+            this.label1.Location = new System.Drawing.Point(44, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 13);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Number of records broken: ";
-            // 
-            // txbNumBroken
-            // 
-            this.txbNumBroken.Location = new System.Drawing.Point(184, 135);
-            this.txbNumBroken.Name = "txbNumBroken";
-            this.txbNumBroken.Size = new System.Drawing.Size(44, 20);
-            this.txbNumBroken.TabIndex = 1;
+            this.label1.Text = "Current Records";
             // 
             // lblMostWins
             // 
@@ -132,27 +126,6 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "with the final move";
             // 
-            // txbPlayer
-            // 
-            this.txbPlayer.Location = new System.Drawing.Point(44, 62);
-            this.txbPlayer.Name = "txbPlayer";
-            this.txbPlayer.Size = new System.Drawing.Size(83, 20);
-            this.txbPlayer.TabIndex = 13;
-            // 
-            // txbCharacter
-            // 
-            this.txbCharacter.Location = new System.Drawing.Point(203, 62);
-            this.txbCharacter.Name = "txbCharacter";
-            this.txbCharacter.Size = new System.Drawing.Size(83, 20);
-            this.txbCharacter.TabIndex = 14;
-            // 
-            // txbMove
-            // 
-            this.txbMove.Location = new System.Drawing.Point(405, 62);
-            this.txbMove.Name = "txbMove";
-            this.txbMove.Size = new System.Drawing.Size(132, 20);
-            this.txbMove.TabIndex = 15;
-            // 
             // btnNewMatch
             // 
             this.btnNewMatch.Location = new System.Drawing.Point(44, 384);
@@ -163,15 +136,62 @@
             this.btnNewMatch.UseVisualStyleBackColor = true;
             this.btnNewMatch.Click += new System.EventHandler(this.btnNewMatch_Click);
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(530, 65);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(66, 13);
+            this.lbl.TabIndex = 17;
+            this.lbl.Text = "on the stage";
+            // 
+            // lblmove
+            // 
+            this.lblmove.AutoSize = true;
+            this.lblmove.Location = new System.Drawing.Point(448, 65);
+            this.lblmove.Name = "lblmove";
+            this.lblmove.Size = new System.Drawing.Size(33, 13);
+            this.lblmove.TabIndex = 18;
+            this.lblmove.Text = "move";
+            // 
+            // lblCharacter
+            // 
+            this.lblCharacter.AutoSize = true;
+            this.lblCharacter.Location = new System.Drawing.Point(229, 65);
+            this.lblCharacter.Name = "lblCharacter";
+            this.lblCharacter.Size = new System.Drawing.Size(13, 13);
+            this.lblCharacter.TabIndex = 19;
+            this.lblCharacter.Text = "0";
+            // 
+            // lblPlayer
+            // 
+            this.lblPlayer.AutoSize = true;
+            this.lblPlayer.Location = new System.Drawing.Point(65, 65);
+            this.lblPlayer.Name = "lblPlayer";
+            this.lblPlayer.Size = new System.Drawing.Size(13, 13);
+            this.lblPlayer.TabIndex = 20;
+            this.lblPlayer.Text = "0";
+            // 
+            // lblStage
+            // 
+            this.lblStage.AutoSize = true;
+            this.lblStage.Location = new System.Drawing.Point(657, 65);
+            this.lblStage.Name = "lblStage";
+            this.lblStage.Size = new System.Drawing.Size(13, 13);
+            this.lblStage.TabIndex = 21;
+            this.lblStage.Text = "0";
+            // 
             // Records
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblStage);
+            this.Controls.Add(this.lblPlayer);
+            this.Controls.Add(this.lblCharacter);
+            this.Controls.Add(this.lblmove);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnNewMatch);
-            this.Controls.Add(this.txbMove);
-            this.Controls.Add(this.txbCharacter);
-            this.Controls.Add(this.txbPlayer);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblHotStreakName);
@@ -180,7 +200,6 @@
             this.Controls.Add(this.lblHotStreak);
             this.Controls.Add(this.lblMostWinsSet);
             this.Controls.Add(this.lblMostWins);
-            this.Controls.Add(this.txbNumBroken);
             this.Controls.Add(this.label1);
             this.Name = "Records";
             this.Text = "Records";
@@ -192,7 +211,6 @@
       #endregion
 
       private System.Windows.Forms.Label label1;
-      private System.Windows.Forms.TextBox txbNumBroken;
       private System.Windows.Forms.Label lblMostWins;
       private System.Windows.Forms.Label lblMostWinsSet;
       private System.Windows.Forms.Label lblHotStreak;
@@ -201,9 +219,11 @@
       private System.Windows.Forms.Label lblHotStreakName;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label5;
-      private System.Windows.Forms.TextBox txbPlayer;
-      private System.Windows.Forms.TextBox txbCharacter;
-      private System.Windows.Forms.TextBox txbMove;
       private System.Windows.Forms.Button btnNewMatch;
-   }
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblmove;
+        private System.Windows.Forms.Label lblCharacter;
+        private System.Windows.Forms.Label lblPlayer;
+        private System.Windows.Forms.Label lblStage;
+    }
 }

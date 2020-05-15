@@ -51,197 +51,105 @@ namespace SmashBrosMatchMaker
             NameBoxes.Add(txtP6Name);
             NameBoxes.Add(txtP7Name);
             NameBoxes.Add(txtP8Name);
+
+            nameLabel.Add(lblname1);
+            nameLabel.Add(lblname2);
+            nameLabel.Add(lblname3);
+            nameLabel.Add(lblname4);
+            nameLabel.Add(lblname5);
+            nameLabel.Add(lblname6);
+            nameLabel.Add(lblname7);
+            nameLabel.Add(lblname8);
+
+            numberLabel.Add(lblPlayer1);
+            numberLabel.Add(lblPlayer2);
+            numberLabel.Add(lblPlayer3);
+            numberLabel.Add(lblPlayer4);
+            numberLabel.Add(lblPlayer5);
+            numberLabel.Add(lblPlayer6);
+            numberLabel.Add(lblPlayer7);
+            numberLabel.Add(lblPlayer8);
         }
         public void newGame()
         {
             foreach (TextBox txt in NameBoxes)
                 txt.ReadOnly = true;
+            lblError.Text = "";
         }
         public void makeVisible()
         {
+            int i = 0;
+            foreach(TextBox box in NameBoxes )
+            {
+                if(box.Name.Contains((i+1).ToString()) && i < numPlayers)
+                {
+                    box.Visible = true;
+                }
+                i++;
+            }
+            i = 0;
+            foreach (ComboBox box in characterBoxes)
+            {
+                if (box.Name.Contains((i + 1).ToString()) && i < numPlayers)
+                {
+                    box.Visible = true;
+                }
+                i++;
+            }
+            i = 0;
+            foreach (Label label in nameLabel)
+            {
+                if (label.Name.Contains((i + 1).ToString()) && i < numPlayers)
+                {
+                    label.Visible = true;
+                }
+                i++;
+            }
+            i = 0;
+            foreach (Label label in numberLabel)
+            {
+                if (label.Name.Contains((i + 1).ToString()) && i < numPlayers)
+                {
+                    label.Visible = true;
+                }
+                i++;
+            }
+
+        }
+        private bool isEmpty()
+        {
             
-            if (numPlayers == 8)
+            foreach (TextBox box in NameBoxes)
             {
-                lblPlayer1.Visible = true;
-                lblPlayer2.Visible = true;
-                lblPlayer3.Visible = true;
-                lblPlayer4.Visible = true;
-                lblPlayer5.Visible = true;
-                lblPlayer6.Visible = true;
-                lblPlayer7.Visible = true;
-                lblPlayer8.Visible = true;
-
-                lblname1.Visible = true;
-                lblname2.Visible = true;
-                lblname3.Visible = true;
-                lblname4.Visible = true;
-                lblname5.Visible = true;
-                lblname6.Visible = true;
-                lblname7.Visible = true;
-                lblname8.Visible = true;
-
-
-                cmbPlayer1.Visible = true;
-                cmbPlayer2.Visible = true;
-                cmbPlayer3.Visible = true;
-                cmbPlayer4.Visible = true;
-                cmbPlayer5.Visible = true;
-                cmbPlayer6.Visible = true;
-                cmbPlayer7.Visible = true;
-                cmbPlayer8.Visible = true;
-
-                txtP1Name.Visible = true;
-                txtP2Name.Visible = true;
-                txtP3Name.Visible = true;
-                txtP4Name.Visible = true;
-                txtP5Name.Visible = true;
-                txtP6Name.Visible = true;
-                txtP7Name.Visible = true;
-                txtP8Name.Visible = true;
+                if (box.Text == "" && box.Visible == true)
+                {
+                    return true;
+                }
                 
-
-
-
             }
-            else if (numPlayers == 7)
+            foreach (ComboBox box in characterBoxes)
             {
-                lblPlayer1.Visible = true;
-                lblPlayer2.Visible = true;
-                lblPlayer3.Visible = true;
-                lblPlayer4.Visible = true;
-                lblPlayer5.Visible = true;
-                lblPlayer6.Visible = true;
-                lblPlayer7.Visible = true;
-                
-                lblname1.Visible = true;
-                lblname2.Visible = true;
-                lblname3.Visible = true;
-                lblname4.Visible = true;
-                lblname5.Visible = true;
-                lblname6.Visible = true;
-                lblname7.Visible = true;
-
-
-                cmbPlayer1.Visible = true;
-                cmbPlayer2.Visible = true;
-                cmbPlayer3.Visible = true;
-                cmbPlayer4.Visible = true;
-                cmbPlayer5.Visible = true;
-                cmbPlayer6.Visible = true;
-                cmbPlayer7.Visible = true;
-
-                txtP1Name.Visible = true;
-                txtP2Name.Visible = true;
-                txtP3Name.Visible = true;
-                txtP4Name.Visible = true;
-                txtP5Name.Visible = true;
-                txtP6Name.Visible = true;
-                txtP7Name.Visible = true;
-
+                if (box.SelectedItem == null && box.Visible == true)
+                {
+                    return true;
+                }
             }
-            else if (numPlayers == 6)
-            {
-                lblPlayer1.Visible = true;
-                lblPlayer2.Visible = true;
-                lblPlayer3.Visible = true;
-                lblPlayer4.Visible = true;
-                lblPlayer5.Visible = true;
-                lblPlayer6.Visible = true;
-
-                lblname1.Visible = true;
-                lblname2.Visible = true;
-                lblname3.Visible = true;
-                lblname4.Visible = true;
-                lblname5.Visible = true;
-                lblname6.Visible = true;
-
-                cmbPlayer1.Visible = true;
-                cmbPlayer2.Visible = true;
-                cmbPlayer3.Visible = true;
-                cmbPlayer4.Visible = true;
-                cmbPlayer5.Visible = true;
-                cmbPlayer6.Visible = true;
-
-                txtP1Name.Visible = true;
-                txtP2Name.Visible = true;
-                txtP3Name.Visible = true;
-                txtP4Name.Visible = true;
-                txtP5Name.Visible = true;
-                txtP6Name.Visible = true;
-
-            }
-            else if (numPlayers == 5)
-            {
-                lblPlayer1.Visible = true;
-                lblPlayer2.Visible = true;
-                lblPlayer3.Visible = true;
-                lblPlayer4.Visible = true;
-                lblPlayer5.Visible = true;
-
-                lblname1.Visible = true;
-                lblname2.Visible = true;
-                lblname3.Visible = true;
-                lblname4.Visible = true;
-                lblname5.Visible = true;
-
-
-                cmbPlayer1.Visible = true;
-                cmbPlayer2.Visible = true;
-                cmbPlayer3.Visible = true;
-                cmbPlayer4.Visible = true;
-                cmbPlayer5.Visible = true;
-
-                txtP1Name.Visible = true;
-                txtP2Name.Visible = true;
-                txtP3Name.Visible = true;
-                txtP4Name.Visible = true;
-                txtP5Name.Visible = true;
-
-            }
-            else if (numPlayers == 4)
-            {
-                lblPlayer1.Visible = true;
-                lblPlayer2.Visible = true;
-                lblPlayer3.Visible = true;
-                lblPlayer4.Visible = true;
-
-                lblname1.Visible = true;
-                lblname2.Visible = true;
-                lblname3.Visible = true;
-                lblname4.Visible = true;
-
-                cmbPlayer1.Visible = true;
-                cmbPlayer2.Visible = true;
-                cmbPlayer3.Visible = true;
-                cmbPlayer4.Visible = true;
-
-                txtP1Name.Visible = true;
-                txtP2Name.Visible = true;
-                txtP3Name.Visible = true;
-                txtP4Name.Visible = true;
-            }
-            else if (numPlayers == 3)
-            {
-                lblPlayer1.Visible = true;
-                lblPlayer2.Visible = true;
-                lblPlayer3.Visible = true;
-
-                lblname1.Visible = true;
-                lblname2.Visible = true;
-                lblname3.Visible = true;
-
-                cmbPlayer1.Visible = true;
-                cmbPlayer2.Visible = true;
-                cmbPlayer3.Visible = true;
-
-                txtP1Name.Visible = true;
-                txtP2Name.Visible = true;
-                txtP3Name.Visible = true;
-            }
+            if (cmbStage.SelectedItem == null)
+                return true;
+            else if (cmbStageType.SelectedItem == null)
+                return true;
+            else
+                return false;
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            if(isEmpty())
+            {
+                lblError.Text = "Please do not leave any options empty";
+                return;
+            }
+            Stage stage;
             List<Player> playerList = new List<Player>();
             int i = 1;
             if(firstGame)
@@ -264,6 +172,8 @@ namespace SmashBrosMatchMaker
                         i++;
                     }
                 }
+                stage = new Stage(cmbStage.SelectedItem.ToString(),cmbStageType.SelectedItem.ToString());
+                
                 controller.SetPlayerList(playerList);
             }
             else
@@ -283,12 +193,14 @@ namespace SmashBrosMatchMaker
                     }
                     
                 }
+                stage = new Stage(cmbStage.SelectedItem.ToString(), cmbStageType.SelectedItem.ToString());
+                
             }
                 
 
             
             this.Hide();
-            controller.openChooseWinner(numPlayers);
+            controller.openChooseWinner(numPlayers,stage);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace SmashBrosMatchMaker.forms
    {
       static IOControl controller = IOControl.Instance;
       public Player winner { get; set; }
+      public Stage currentStage { get; set; }
       public Records()
       {
          InitializeComponent();
@@ -23,8 +24,9 @@ namespace SmashBrosMatchMaker.forms
 
       public void fillFields()
       {
-         txbPlayer.Text = winner.playerName;
-         txbCharacter.Text = winner.currentCharacter.name;
+         lblPlayer.Text = winner.playerName;
+         lblCharacter.Text = winner.currentCharacter.name;
+            lblStage.Text = currentStage.name;
             if (Convert.ToInt32(lblMostWinsSet.Text) < winner.winCount)
             {
                 lblMostWinsSet.Text = winner.winCount.ToString();

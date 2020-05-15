@@ -11,7 +11,7 @@ namespace SmashBrosMatchMaker.MatchInfo
         int matchID;
         string MatchType;
         List<Player> playerList;
-        List<string> stageList;
+        List<Stage> stageList;
         List<Items> itemList;
         public Match(string MatchType)
         {
@@ -21,7 +21,7 @@ namespace SmashBrosMatchMaker.MatchInfo
         {
             playerList.Add(newPlayer);
         }
-        public void addStage(string stage)
+        public void addStage(Stage stage)
         {
             stageList.Add(stage);
         }

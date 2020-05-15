@@ -17,6 +17,7 @@ namespace SmashBrosMatchMaker.forms
       static IOControl controller = IOControl.Instance;
       public int numPlayers { get; set; }
       public List<Player> playerList = new List<Player>();
+      public Stage stage;
         
 
       private Player winner;
@@ -55,7 +56,7 @@ namespace SmashBrosMatchMaker.forms
                 player.winStreak =  0;
          }
          this.Hide();
-         controller.openRecords(winner);
+         controller.openRecords(winner,stage);
       }
    }
 }
