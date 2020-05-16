@@ -464,6 +464,7 @@
             this.cmbPlayerList1.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList1.TabIndex = 47;
             this.cmbPlayerList1.Visible = false;
+            this.cmbPlayerList1.DropDownClosed += new System.EventHandler(this.cmbPlayerList1_DropDownClosed);
             // 
             // bttCreate
             // 
@@ -543,6 +544,7 @@
             this.cmbPlayerList3.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList3.TabIndex = 55;
             this.cmbPlayerList3.Visible = false;
+            this.cmbPlayerList3.DropDownClosed += new System.EventHandler(this.cmbPlayerList3_DropDownClosed);
             // 
             // cmbPlayerList2
             // 
@@ -554,6 +556,7 @@
             this.cmbPlayerList2.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList2.TabIndex = 56;
             this.cmbPlayerList2.Visible = false;
+            this.cmbPlayerList2.DropDownClosed += new System.EventHandler(this.cmbPlayerList2_DropDownClosed);
             // 
             // cmbPlayerList4
             // 
@@ -563,6 +566,7 @@
             this.cmbPlayerList4.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList4.TabIndex = 57;
             this.cmbPlayerList4.Visible = false;
+            this.cmbPlayerList4.DropDownClosed += new System.EventHandler(this.cmbPlayerList4_DropDownClosed);
             // 
             // cmbPlayerList5
             // 
@@ -572,6 +576,7 @@
             this.cmbPlayerList5.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList5.TabIndex = 58;
             this.cmbPlayerList5.Visible = false;
+            this.cmbPlayerList5.DropDownClosed += new System.EventHandler(this.cmbPlayerList5_DropDownClosed);
             // 
             // cmbPlayerList6
             // 
@@ -581,6 +586,7 @@
             this.cmbPlayerList6.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList6.TabIndex = 59;
             this.cmbPlayerList6.Visible = false;
+            this.cmbPlayerList6.DropDownClosed += new System.EventHandler(this.cmbPlayerList6_DropDownClosed);
             // 
             // cmbPlayerList7
             // 
@@ -590,6 +596,7 @@
             this.cmbPlayerList7.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList7.TabIndex = 60;
             this.cmbPlayerList7.Visible = false;
+            this.cmbPlayerList7.DropDownClosed += new System.EventHandler(this.cmbPlayerList7_DropDownClosed);
             // 
             // cmbPlayerList8
             // 
@@ -599,6 +606,7 @@
             this.cmbPlayerList8.Size = new System.Drawing.Size(121, 21);
             this.cmbPlayerList8.TabIndex = 61;
             this.cmbPlayerList8.Visible = false;
+            this.cmbPlayerList8.DropDownClosed += new System.EventHandler(this.cmbPlayerList8_DropDownClosed);
             // 
             // lblChoosePlayer7
             // 

@@ -11,19 +11,14 @@ namespace SmashBrosMatchMaker.Database
     {
         static void Main(string[] args)
         {
-            Player p = new Player
-            {
-                PlayerName = "thing",
-                PlayerTypeId = 2,
-                RecordId = 4
-            };
+           
 
-            Console.WriteLine(DatabaseContext.Instance.Player.Count());
+            
 
-            DatabaseContext.Instance.Add(p);
-            DatabaseContext.Instance.SaveChanges();
+            //DatabaseContext.Instance.Add(p);
+            //DatabaseContext.Instance.SaveChanges();
 
-            Console.WriteLine(DatabaseContext.Instance.Player.Count());
+            //Console.WriteLine(DatabaseContext.Instance.Player.Count());
         }
     }
 }

@@ -24,7 +24,7 @@ namespace SmashBrosMatchMaker
 
         public int itemPercent { get; set; }
 
-        Match match = new Match();
+        public Match match = new Match();
         
 
         List<ComboBox> characterBoxes = new List<ComboBox>();
@@ -37,11 +37,40 @@ namespace SmashBrosMatchMaker
         {
             InitializeComponent();
             populateLists();
+            importDatabase();
         }
+        public void importDatabase()
+        {
+            List<Player> tempList = new List<Player>();
+            
+            tempList = Database.DatabaseContext.Instance.Player.ToList();
+
+            cmbPlayerList1.Items.Clear();
+            cmbPlayerList2.Items.Clear();
+            cmbPlayerList3.Items.Clear();
+            cmbPlayerList4.Items.Clear();
+            cmbPlayerList5.Items.Clear();
+            cmbPlayerList6.Items.Clear();
+            cmbPlayerList7.Items.Clear();
+            cmbPlayerList8.Items.Clear();
+
+            foreach (Player player in tempList)
+            {
+                cmbPlayerList1.Items.Add(player.PlayerName);
+                cmbPlayerList2.Items.Add(player.PlayerName);
+                cmbPlayerList3.Items.Add(player.PlayerName);
+                cmbPlayerList4.Items.Add(player.PlayerName);
+                cmbPlayerList5.Items.Add(player.PlayerName);
+                cmbPlayerList6.Items.Add(player.PlayerName);
+                cmbPlayerList7.Items.Add(player.PlayerName);
+                cmbPlayerList8.Items.Add(player.PlayerName);
+            }
+        }
+
         public void populateLists()
         {
-            //populate playerCombo box with all players from database
             
+
             characterBoxes.Add(cmbChar1);
             characterBoxes.Add(cmbChar2);
             characterBoxes.Add(cmbChar3);
@@ -165,6 +194,16 @@ namespace SmashBrosMatchMaker
             else
                 return false;
         }
+        private void duplicateCheck(ComboBox check)
+        {
+            foreach (ComboBox list in playerBoxes)
+            {
+                if(check != list && check.SelectedItem == list.SelectedItem)
+                {
+                    list.SelectedItem = null;
+                }
+            }
+        }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
@@ -197,7 +236,8 @@ namespace SmashBrosMatchMaker
                     i++;
                 }
             }
-            
+            Stage s = Database.DatabaseContext.Instance.Stage.Where(foundStage => foundStage.StageName == cmbStage.SelectedItem.ToString()).First();
+            match.stageList.Add(s);
             this.Hide();
             controller.openChooseWinner(match);
         }
@@ -205,7 +245,47 @@ namespace SmashBrosMatchMaker
         private void bttCreate_Click(object sender, EventArgs e)
         {
             this.Hide();
-            controller.openCreationScreen();
+            controller.openCreationScreen(match);
+        }
+
+        private void cmbPlayerList1_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList1);
+        }
+
+        private void cmbPlayerList2_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList2);
+        }
+
+        private void cmbPlayerList3_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList3);
+        }
+
+        private void cmbPlayerList4_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList4);
+        }
+
+        private void cmbPlayerList5_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList5);
+        }
+
+        private void cmbPlayerList6_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList6);
+        }
+
+        private void cmbPlayerList7_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList7);
+        }
+
+        private void cmbPlayerList8_DropDownClosed(object sender, EventArgs e)
+        {
+            duplicateCheck(cmbPlayerList8);
         }
     }
 }

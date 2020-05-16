@@ -51,8 +51,6 @@ namespace SmashBrosMatchMaker.forms
         }
 
         List<Player> playerList = new List<Player>();
-        public int numPlayers;
-        public int humanPlayers;
         public bool firstGame = true;
         public void SetPlayerList(List<Player> newPlayers)
         {
@@ -65,23 +63,16 @@ namespace SmashBrosMatchMaker.forms
 
             
         }
-        public void openSelectionScreen(int numPlayers, bool isItems, int itemPercent)
+        public void openSelectionScreen(Match match)
         {
-            
-            this.numPlayers = numPlayers;
             if(firstGame)
             { 
-                selectionForm.numPlayers = numPlayers;
+                selectionForm.numPlayers = match.numPlayers;
             }
+            selectionForm.importDatabase();
             selectionForm.firstGame = firstGame;
-            selectionForm.isItems = isItems;
-            selectionForm.itemPercent = itemPercent;
+            selectionForm.match = match;
             selectionForm.makeVisible();
-            selectionForm.Show();
-        }
-
-        public void showSelectionScreen()
-        {
             selectionForm.Show();
         }
         public void openChooseWinner(Match match)
@@ -98,7 +89,7 @@ namespace SmashBrosMatchMaker.forms
 
         public void openRecords(Player winner,Match match)
         {
-            recordsForm.currentStage = match.stageList.Last();
+            //recordsForm.currentStage = match.stageList.Last();
             recordsForm.winner = winner;
             recordsForm.fillFields(match);
             recordsForm.Show();
@@ -109,8 +100,9 @@ namespace SmashBrosMatchMaker.forms
            rulesForm.newGame();
            rulesForm.Show();
         }
-        public void openCreationScreen()
+        public void openCreationScreen(Match match)
         {
+            creationForm.match = match;
             creationForm.Show();
         }
    }

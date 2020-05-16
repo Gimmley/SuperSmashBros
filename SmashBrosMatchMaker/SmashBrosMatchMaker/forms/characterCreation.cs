@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmashBrosMatchMaker.Database.Entities;
+using SmashBrosMatchMaker.MatchInfo;
 
 namespace SmashBrosMatchMaker.forms
 {
@@ -18,7 +19,7 @@ namespace SmashBrosMatchMaker.forms
         {
             InitializeComponent();
         }
-
+        public Match match = new Match();
         private void btConfirm_Click(object sender, EventArgs e)
         {
             if (isEmpty()||!isValid())
@@ -39,7 +40,7 @@ namespace SmashBrosMatchMaker.forms
             Database.DatabaseContext.Instance.Add(newPlayer);
             Database.DatabaseContext.Instance.SaveChanges();
             this.Hide();
-            controller.showSelectionScreen();
+            controller.openSelectionScreen(match);
             
         }
         private bool isEmpty()

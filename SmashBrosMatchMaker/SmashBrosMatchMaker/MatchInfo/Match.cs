@@ -10,12 +10,14 @@ namespace SmashBrosMatchMaker.MatchInfo
     public class Match
     {
         
-        public string MatchType;
+        public int MatchType;
         public int numPlayers;
-        public List<Player> playerList;
-        public List<Stage> stageList;
+        public bool isItems;
+        public int itemPercent;
+        public List<Player> playerList = new List<Player>();
+        public List<Stage> stageList = new List<Stage>();
         public List<Items> itemList;
-        public Dictionary<Player, CharacterTable> characterList;
+        public Dictionary<Player, CharacterTable> characterList = new Dictionary<Player, CharacterTable>();
         public Match()
         {
            
