@@ -332,6 +332,11 @@ namespace SmashBrosMatchMaker.Database
                     .HasColumnName("player_type_id")
                     .HasColumnType("int(11)");
 
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnName("updated_at")
+                    .HasColumnType("timestamp")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
                 entity.HasOne(d => d.PlayerType)
                     .WithMany(p => p.Player)
                     .HasForeignKey(d => d.PlayerTypeId)

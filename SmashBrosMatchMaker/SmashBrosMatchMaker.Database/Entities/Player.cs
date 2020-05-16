@@ -15,6 +15,7 @@ namespace SmashBrosMatchMaker.Database.Entities
         public int Id { get; set; }
         public string PlayerName { get; set; }
         public int? PlayerTypeId { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         public virtual PlayerType PlayerType { get; set; }
         public virtual ICollection<CharacterTable> CharacterTable { get; set; }
