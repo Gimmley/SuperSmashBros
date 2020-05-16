@@ -8,6 +8,7 @@ namespace SmashBrosMatchMaker.Database.Entities
         public Player()
         {
             CharacterTable = new HashSet<CharacterTable>();
+            MatchTable = new HashSet<MatchTable>();
             Records = new HashSet<Records>();
         }
 
@@ -17,6 +18,7 @@ namespace SmashBrosMatchMaker.Database.Entities
 
         public virtual PlayerType PlayerType { get; set; }
         public virtual ICollection<CharacterTable> CharacterTable { get; set; }
+        public virtual ICollection<MatchTable> MatchTable { get; set; }
         public virtual ICollection<Records> Records { get; set; }
     }
 }

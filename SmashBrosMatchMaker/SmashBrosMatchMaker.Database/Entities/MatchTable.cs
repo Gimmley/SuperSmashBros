@@ -12,15 +12,14 @@ namespace SmashBrosMatchMaker.Database.Entities
         }
 
         public int Id { get; set; }
-        public string WinnerName { get; set; }
-        public int? CharacterTableId { get; set; }
+        public int? PlayerId { get; set; }
         public int? GameTypeId { get; set; }
         public int? StageId { get; set; }
         public int? ItemsId { get; set; }
 
-        public virtual CharacterTable CharacterTable { get; set; }
         public virtual GameType GameType { get; set; }
         public virtual Items Items { get; set; }
+        public virtual Player Player { get; set; }
         public virtual Stage Stage { get; set; }
         public virtual ICollection<CharactersInMatch> CharactersInMatch { get; set; }
         public virtual ICollection<ItemsInGames> ItemsInGames { get; set; }

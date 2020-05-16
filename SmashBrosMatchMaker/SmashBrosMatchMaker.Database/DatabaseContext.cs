@@ -7,14 +7,14 @@ namespace SmashBrosMatchMaker.Database
 {
     public partial class DatabaseContext : DbContext
     {
-        private static Database.DatabaseContext instance;
+        private static DatabaseContext instance;
         private static object sync = new object();
 
         private DatabaseContext()
         {
         }
 
-        public static Database.DatabaseContext Instance
+        public static DatabaseContext Instance
         {
             get
             {
@@ -24,7 +24,7 @@ namespace SmashBrosMatchMaker.Database
                     {
                         if (instance == null)
                         {
-                            return (instance = new Database.DatabaseContext());
+                            return (instance = new DatabaseContext());
                         }
                     }
                 }
@@ -42,7 +42,6 @@ namespace SmashBrosMatchMaker.Database
         public virtual DbSet<Moves> Moves { get; set; }
         public virtual DbSet<Player> Player { get; set; }
         public virtual DbSet<PlayerType> PlayerType { get; set; }
-        public virtual DbSet<PlayersWithCharacter> PlayersWithCharacter { get; set; }
         public virtual DbSet<Records> Records { get; set; }
         public virtual DbSet<Stage> Stage { get; set; }
         public virtual DbSet<StageType> StageType { get; set; }
@@ -216,28 +215,20 @@ namespace SmashBrosMatchMaker.Database
             {
                 entity.ToTable("match_table");
 
-                entity.HasIndex(e => e.CharacterTableId)
-                    .HasName("character_table_id");
-
                 entity.HasIndex(e => e.GameTypeId)
                     .HasName("game_type_id");
 
                 entity.HasIndex(e => e.ItemsId)
                     .HasName("items_id");
 
+                entity.HasIndex(e => e.PlayerId)
+                    .HasName("character_table_id");
+
                 entity.HasIndex(e => e.StageId)
                     .HasName("stage_id");
 
-                entity.HasIndex(e => e.WinnerName)
-                    .HasName("winner_name")
-                    .IsUnique();
-
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .HasColumnType("int(11)");
-
-                entity.Property(e => e.CharacterTableId)
-                    .HasColumnName("character_table_id")
                     .HasColumnType("int(11)");
 
                 entity.Property(e => e.GameTypeId)
@@ -248,22 +239,14 @@ namespace SmashBrosMatchMaker.Database
                     .HasColumnName("items_id")
                     .HasColumnType("int(11)");
 
+                entity.Property(e => e.PlayerId)
+                    .HasColumnName("player_id")
+                    .HasColumnType("int(11)")
+                    .HasComment("id of the winning id");
+
                 entity.Property(e => e.StageId)
                     .HasColumnName("stage_id")
                     .HasColumnType("int(11)");
-
-                entity.Property(e => e.WinnerName)
-                    .IsRequired()
-                    .HasColumnName("winner_name")
-                    .HasColumnType("varchar(255)")
-                    .HasCharSet("latin1")
-                    .HasCollation("latin1_swedish_ci");
-
-                entity.HasOne(d => d.CharacterTable)
-                    .WithMany(p => p.MatchTable)
-                    .HasForeignKey(d => d.CharacterTableId)
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .HasConstraintName("match_table_ibfk_1");
 
                 entity.HasOne(d => d.GameType)
                     .WithMany(p => p.MatchTable)
@@ -276,6 +259,12 @@ namespace SmashBrosMatchMaker.Database
                     .HasForeignKey(d => d.ItemsId)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("match_table_ibfk_4");
+
+                entity.HasOne(d => d.Player)
+                    .WithMany(p => p.MatchTable)
+                    .HasForeignKey(d => d.PlayerId)
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .HasConstraintName("match_table_ibfk_5");
 
                 entity.HasOne(d => d.Stage)
                     .WithMany(p => p.MatchTable)
@@ -370,41 +359,6 @@ namespace SmashBrosMatchMaker.Database
                     .HasCollation("latin1_swedish_ci");
             });
 
-            modelBuilder.Entity<PlayersWithCharacter>(entity =>
-            {
-                entity.ToTable("players_with_character");
-
-                entity.HasIndex(e => e.CharacterTableId)
-                    .HasName("character_table_id");
-
-                entity.HasIndex(e => e.RecordId)
-                    .HasName("record_id");
-
-                entity.Property(e => e.Id)
-                    .HasColumnName("id")
-                    .HasColumnType("int(11)");
-
-                entity.Property(e => e.CharacterTableId)
-                    .HasColumnName("character_table_id")
-                    .HasColumnType("int(11)");
-
-                entity.Property(e => e.RecordId)
-                    .HasColumnName("record_id")
-                    .HasColumnType("int(11)");
-
-                entity.HasOne(d => d.CharacterTable)
-                    .WithMany(p => p.PlayersWithCharacter)
-                    .HasForeignKey(d => d.CharacterTableId)
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .HasConstraintName("players_with_character_ibfk_1");
-
-                entity.HasOne(d => d.Record)
-                    .WithMany(p => p.PlayersWithCharacter)
-                    .HasForeignKey(d => d.RecordId)
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .HasConstraintName("players_with_character_ibfk_2");
-            });
-
             modelBuilder.Entity<Records>(entity =>
             {
                 entity.ToTable("records");
@@ -426,7 +380,8 @@ namespace SmashBrosMatchMaker.Database
 
                 entity.Property(e => e.PlayerId)
                     .HasColumnName("player_id")
-                    .HasColumnType("int(55)");
+                    .HasColumnType("int(55)")
+                    .HasComment("current record holder");
 
                 entity.Property(e => e.RecordName)
                     .IsRequired()

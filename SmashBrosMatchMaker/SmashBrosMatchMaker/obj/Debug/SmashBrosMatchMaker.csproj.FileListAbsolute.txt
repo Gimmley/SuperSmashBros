@@ -206,3 +206,19 @@ F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatc
 F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.Choose_Winner.resources
 F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.Records.resources
 F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.characterCreation.resources
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.CharacterCreation.resources
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Zstandard.Net.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.xml
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.xml
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.xml
