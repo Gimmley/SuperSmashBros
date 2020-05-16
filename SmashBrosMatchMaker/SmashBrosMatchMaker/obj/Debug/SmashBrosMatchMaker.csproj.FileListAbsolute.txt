@@ -1,36 +1,3 @@
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe.config
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.pdb
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Buffers.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Memory.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Numerics.Vectors.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Encodings.Web.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Json.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Threading.Tasks.Extensions.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ValueTuple.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.pdb
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Buffers.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Memory.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Numerics.Vectors.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Encodings.Web.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Json.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Threading.Tasks.Extensions.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ValueTuple.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csprojAssemblyReference.cache
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.Rules.resources
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.Properties.Resources.resources
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.GenerateResource.cache
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.CoreCompileInputs.cache
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.CopyComplete
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.exe
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.pdb
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.CharacterSelection.resources
 C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe.config
 C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe
 C:\Users\Kyle\Desktop\MyThings\School\Database\Project\repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.pdb
@@ -114,6 +81,7 @@ C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatc
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.exe
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Collections.Immutable.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ComponentModel.Annotations.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -123,6 +91,7 @@ C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatc
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Pomelo.JsonObject.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.pdb
+C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.exe.config
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.HashCode.xml
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.xml
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
@@ -142,68 +111,6 @@ C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatc
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySqlConnector.xml
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Newtonsoft.Json.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\BouncyCastle.Crypto.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.Streams.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.HashCode.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Options.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Primitives.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.exe
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Collections.Immutable.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ComponentModel.Annotations.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Ubiety.Dns.Core.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Zstandard.Net.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySqlConnector.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Pomelo.JsonObject.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Newtonsoft.Json.dll
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.pdb
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.exe.config
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.Streams.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.HashCode.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Options.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Primitives.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Collections.Immutable.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Diagnostics.DiagnosticSource.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySqlConnector.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Newtonsoft.Json.xml
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.Choose_Winner.resources
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.Records.resources
-F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.characterCreation.resources
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.CharacterCreation.resources
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.dll
@@ -220,5 +127,98 @@ C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatc
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.xml
 C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.xml
-C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.dll
-C:\Users\Kevin\Documents\GitHub\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.dll.config
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe.config
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.exe
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.pdb
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\BouncyCastle.Crypto.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.Streams.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.HashCode.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Options.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Primitives.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Buffers.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Collections.Immutable.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ComponentModel.Annotations.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Memory.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Numerics.Vectors.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Encodings.Web.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Json.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ValueTuple.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Ubiety.Dns.Core.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Zstandard.Net.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySqlConnector.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Pomelo.JsonObject.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Newtonsoft.Json.dll
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.pdb
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\SmashBrosMatchMaker.Database.dll.config
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Google.Protobuf.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Compression.LZ4.Streams.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\K4os.Hash.xxHash.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Bcl.HashCode.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Options.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.Extensions.Primitives.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySql.Data.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.pdb
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Npgsql.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Renci.SshNet.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Buffers.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Collections.Immutable.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Memory.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Numerics.Vectors.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Encodings.Web.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Text.Json.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\System.ValueTuple.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\MySqlConnector.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\bin\Debug\Newtonsoft.Json.xml
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csprojAssemblyReference.cache
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.CharacterSelection.resources
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.CharacterCreation.resources
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.Choose_Winner.resources
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.forms.Records.resources
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.Rules.resources
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.Properties.Resources.resources
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.GenerateResource.cache
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.CoreCompileInputs.cache
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.csproj.CopyComplete
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.exe
+F:\intro to database\Final Repo\SuperSmashBros\SmashBrosMatchMaker\SmashBrosMatchMaker\obj\Debug\SmashBrosMatchMaker.pdb

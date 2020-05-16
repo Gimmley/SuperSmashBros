@@ -67,8 +67,20 @@ namespace SmashBrosMatchMaker.forms
                  //else set winstreak to 0
          }
             cmbWinner.Items.Clear();
+            cmbWinner.SelectedItem = null;
          this.Hide();
-         
+            Player p = Database.DatabaseContext.Instance.Player.Where(foundPlayer => foundPlayer.PlayerName == winnerName).First();
+
+            MatchTable table = new MatchTable
+            {
+                PlayerId = p.Id,
+                GameTypeId = match.MatchType,
+                StageId = match.stageList.Last().Id,
+                ItemsId = 1
+            };
+            Database.DatabaseContext.Instance.MatchTable.Add(table);
+            Database.DatabaseContext.Instance.SaveChanges();
+
          controller.openRecords(winner,match);
       }
    }

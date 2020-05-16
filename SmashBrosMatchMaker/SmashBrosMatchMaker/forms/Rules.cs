@@ -15,7 +15,7 @@ namespace SmashBrosMatchMaker
     public partial class Rules : Form
     {
         static IOControl controller = IOControl.Instance;
-        private bool firstGame = true;
+        
         public Match match = new Match();
 
         public Rules()
@@ -23,22 +23,16 @@ namespace SmashBrosMatchMaker
             
             InitializeComponent();
         }
-        //public int numPlayers { get; set; }
 
         private void bttConfirm_Click(object sender, EventArgs e)
         {
             if (isEmpty())
                 return;
-            controller.firstGame = firstGame;
+            
             int numPlayers;      
-            if (firstGame)
-            {
-                numPlayers = Convert.ToInt32(txtPlayers.Text);
-            }
-            else
-            {
-                numPlayers = match.numPlayers;
-            }
+
+            numPlayers = Convert.ToInt32(txtPlayers.Text);
+
             match.numPlayers = numPlayers;
             if (!isValid())
                 return;
@@ -60,18 +54,13 @@ namespace SmashBrosMatchMaker
             }
             else
                 match.MatchType = 2;
-            
-                this.Hide();
-                controller.openSelectionScreen(match);
-            
-            
-        }
-        public void newGame()
-        {
-            firstGame = false;
-            txtPlayers.Visible = false;
-            lblHumans.Visible = false;
-            
+
+
+
+
+            this.Hide();
+            controller.openSelectionScreen(match);
+
         }
         public bool isValid()
         {
