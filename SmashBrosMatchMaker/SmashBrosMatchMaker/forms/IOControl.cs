@@ -51,7 +51,7 @@ namespace SmashBrosMatchMaker.forms
         }
 
         List<Player> playerList = new List<Player>();
-        public bool firstGame = true;
+        
         public void SetPlayerList(List<Player> newPlayers)
         {
             foreach(Player newPlayer in newPlayers)
@@ -65,31 +65,26 @@ namespace SmashBrosMatchMaker.forms
         }
         public void openSelectionScreen(Match match)
         {
-            if(firstGame)
-            { 
-                selectionForm.numPlayers = match.numPlayers;
-            }
-            selectionForm.importDatabase();
-            selectionForm.firstGame = firstGame;
             selectionForm.match = match;
+            selectionForm.numPlayers = match.numPlayers;
+            selectionForm.importDatabase();
             selectionForm.makeVisible();
             selectionForm.Show();
         }
         public void openChooseWinner(Match match)
         {
-            if(firstGame)
-            {
-                chooseWinnerForm.setPlayers(match.playerList);
-                chooseWinnerForm.fillCombobox();
-                chooseWinnerForm.numPlayers = match.numPlayers;
-            }
+            
+            chooseWinnerForm.setPlayers(match.playerList);
+            chooseWinnerForm.fillCombobox();
+            chooseWinnerForm.numPlayers = match.numPlayers;
+            
             chooseWinnerForm.match = match;
             chooseWinnerForm.Show();
         }
 
         public void openRecords(Player winner,Match match)
         {
-            //recordsForm.currentStage = match.stageList.Last();
+            
             recordsForm.winner = winner;
             recordsForm.fillFields(match);
             recordsForm.Show();
@@ -97,7 +92,7 @@ namespace SmashBrosMatchMaker.forms
 
         public void openRules()
         {
-           rulesForm.newGame();
+           
            rulesForm.Show();
         }
         public void openCreationScreen(Match match)

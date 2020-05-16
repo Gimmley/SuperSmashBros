@@ -18,11 +18,6 @@ namespace SmashBrosMatchMaker
     {
         static IOControl controller = IOControl.Instance;
         public int numPlayers { get; set; }
-        public int humanPlayers { get; set; }
-        public bool isItems { get; set; }
-        public bool firstGame { set; get; }
-
-        public int itemPercent { get; set; }
 
         public Match match = new Match();
         
@@ -45,25 +40,19 @@ namespace SmashBrosMatchMaker
             
             tempList = Database.DatabaseContext.Instance.Player.ToList();
 
-            cmbPlayerList1.Items.Clear();
-            cmbPlayerList2.Items.Clear();
-            cmbPlayerList3.Items.Clear();
-            cmbPlayerList4.Items.Clear();
-            cmbPlayerList5.Items.Clear();
-            cmbPlayerList6.Items.Clear();
-            cmbPlayerList7.Items.Clear();
-            cmbPlayerList8.Items.Clear();
+            foreach (ComboBox box in playerBoxes)
+            {
+                box.SelectedItem = null;
+                box.Items.Clear();
+            }
 
             foreach (Player player in tempList)
             {
-                cmbPlayerList1.Items.Add(player.PlayerName);
-                cmbPlayerList2.Items.Add(player.PlayerName);
-                cmbPlayerList3.Items.Add(player.PlayerName);
-                cmbPlayerList4.Items.Add(player.PlayerName);
-                cmbPlayerList5.Items.Add(player.PlayerName);
-                cmbPlayerList6.Items.Add(player.PlayerName);
-                cmbPlayerList7.Items.Add(player.PlayerName);
-                cmbPlayerList8.Items.Add(player.PlayerName);
+                foreach (ComboBox box in playerBoxes)
+                {
+
+                    box.Items.Add(player.PlayerName);
+                }
             }
         }
 

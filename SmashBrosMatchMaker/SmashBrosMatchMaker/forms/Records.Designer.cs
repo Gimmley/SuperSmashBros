@@ -31,10 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblMostWins = new System.Windows.Forms.Label();
             this.lblMostWinsSet = new System.Windows.Forms.Label();
-            this.lblHotStreak = new System.Windows.Forms.Label();
-            this.lblHotStreakSet = new System.Windows.Forms.Label();
             this.lblMostWinName = new System.Windows.Forms.Label();
-            this.lblHotStreakName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnNewMatch = new System.Windows.Forms.Button();
@@ -73,24 +70,6 @@
             this.lblMostWinsSet.TabIndex = 3;
             this.lblMostWinsSet.Text = "0";
             // 
-            // lblHotStreak
-            // 
-            this.lblHotStreak.AutoSize = true;
-            this.lblHotStreak.Location = new System.Drawing.Point(44, 202);
-            this.lblHotStreak.Name = "lblHotStreak";
-            this.lblHotStreak.Size = new System.Drawing.Size(97, 13);
-            this.lblHotStreak.TabIndex = 4;
-            this.lblHotStreak.Text = "Highest Hot Streak";
-            // 
-            // lblHotStreakSet
-            // 
-            this.lblHotStreakSet.AutoSize = true;
-            this.lblHotStreakSet.Location = new System.Drawing.Point(192, 202);
-            this.lblHotStreakSet.Name = "lblHotStreakSet";
-            this.lblHotStreakSet.Size = new System.Drawing.Size(13, 13);
-            this.lblHotStreakSet.TabIndex = 5;
-            this.lblHotStreakSet.Text = "0";
-            // 
             // lblMostWinName
             // 
             this.lblMostWinName.AutoSize = true;
@@ -99,15 +78,6 @@
             this.lblMostWinName.Size = new System.Drawing.Size(43, 13);
             this.lblMostWinName.TabIndex = 6;
             this.lblMostWinName.Text = "record5";
-            // 
-            // lblHotStreakName
-            // 
-            this.lblHotStreakName.AutoSize = true;
-            this.lblHotStreakName.Location = new System.Drawing.Point(272, 202);
-            this.lblHotStreakName.Name = "lblHotStreakName";
-            this.lblHotStreakName.Size = new System.Drawing.Size(43, 13);
-            this.lblHotStreakName.TabIndex = 7;
-            this.lblHotStreakName.Text = "record6";
             // 
             // label3
             // 
@@ -205,10 +175,7 @@
             this.Controls.Add(this.btnNewMatch);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblHotStreakName);
             this.Controls.Add(this.lblMostWinName);
-            this.Controls.Add(this.lblHotStreakSet);
-            this.Controls.Add(this.lblHotStreak);
             this.Controls.Add(this.lblMostWinsSet);
             this.Controls.Add(this.lblMostWins);
             this.Controls.Add(this.label1);
@@ -224,10 +191,7 @@
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblMostWins;
       private System.Windows.Forms.Label lblMostWinsSet;
-      private System.Windows.Forms.Label lblHotStreak;
-      private System.Windows.Forms.Label lblHotStreakSet;
       private System.Windows.Forms.Label lblMostWinName;
-      private System.Windows.Forms.Label lblHotStreakName;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label5;
       private System.Windows.Forms.Button btnNewMatch;
