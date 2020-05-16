@@ -1,4 +1,5 @@
 ﻿using SmashBrosMatchMaker.forms;
+using SmashBrosMatchMaker.MatchInfo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace SmashBrosMatchMaker
     {
         static IOControl controller = IOControl.Instance;
         private bool firstGame = true;
+        public Match match = new Match();
+
         public Rules()
         {
             
@@ -27,18 +30,18 @@ namespace SmashBrosMatchMaker
             if (isEmpty())
                 return;
             controller.firstGame = firstGame;
-            int numPlayers;
-            int humanPlayers;
+            int numPlayers;      
             if (firstGame)
             {
                 numPlayers = Convert.ToInt32(txtPlayers.Text);
             }
             else
             {
-                humanPlayers = controller.humanPlayers;
-                numPlayers = controller.numPlayers;
+                numPlayers = match.numPlayers;
             }
-                
+            match.numPlayers = numPlayers;
+            if (!isValid())
+                return;
             int itemPercent = 0;
             bool isItems;
             if (rdbYes.Checked)
@@ -48,13 +51,19 @@ namespace SmashBrosMatchMaker
             }
             else
                isItems = false;
-            if (numPlayers <= 8 && numPlayers >= 2)
+            match.isItems = isItems;
+            match.itemPercent = itemPercent;
+
+            if (cmbGameType.SelectedItem.ToString() == "Stock")
             {
-                this.Hide();
-                controller.openSelectionScreen(numPlayers, isItems, itemPercent);
+                match.MatchType = 1;
             }
             else
-                lblError.Text = "Please select a valid number of players";
+                match.MatchType = 2;
+            
+                this.Hide();
+                controller.openSelectionScreen(match);
+            
             
         }
         public void newGame()
@@ -63,6 +72,15 @@ namespace SmashBrosMatchMaker
             txtPlayers.Visible = false;
             lblHumans.Visible = false;
             
+        }
+        public bool isValid()
+        {
+            if (match.numPlayers > 8 || match.numPlayers < 2)
+            {
+                lblError.Text = "Please select a valid number of players";
+                return false;
+            }
+            return true;
         }
         public bool isEmpty()
         {
@@ -91,8 +109,9 @@ namespace SmashBrosMatchMaker
             }
             
             return false;
+                
         }
-
+            
 
       private void rdbYes_CheckedChanged(object sender, EventArgs e)
       {
